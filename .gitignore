@@ -20,3 +20,7 @@ Makefile
 __history
 aclocal.m4
 *.cache/*
+dists/xcode/build/*
+*.pbxuser
+*.perspectivev3
+
