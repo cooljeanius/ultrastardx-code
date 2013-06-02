@@ -23,4 +23,5 @@ aclocal.m4
 dists/xcode/build/*
 *.pbxuser
 *.perspectivev3
+*.mode1*
 

@@ -22,7 +22,6 @@
 		2C4D9C9B0CC9EC8C0031092D /* UFiles.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C6E0CC9EC8C0031092D /* UFiles.pas */; };
 		2C4D9C9C0CC9EC8C0031092D /* UGraphic.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C6F0CC9EC8C0031092D /* UGraphic.pas */; };
 		2C4D9C9D0CC9EC8C0031092D /* UGraphicClasses.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C700CC9EC8C0031092D /* UGraphicClasses.pas */; };
-		2C4D9C9E0CC9EC8C0031092D /* UHooks.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C710CC9EC8C0031092D /* UHooks.pas */; };
 		2C4D9C9F0CC9EC8C0031092D /* UIni.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C720CC9EC8C0031092D /* UIni.pas */; };
 		2C4D9CA00CC9EC8C0031092D /* UJoystick.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C730CC9EC8C0031092D /* UJoystick.pas */; };
 		2C4D9CA10CC9EC8C0031092D /* ULanguage.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C740CC9EC8C0031092D /* ULanguage.pas */; };
@@ -49,7 +48,6 @@
 		2C4D9CB80CC9EC8C0031092D /* UTexture.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8B0CC9EC8C0031092D /* UTexture.pas */; };
 		2C4D9CB90CC9EC8C0031092D /* UThemes.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8C0CC9EC8C0031092D /* UThemes.pas */; };
 		2C4D9CBA0CC9EC8C0031092D /* UTime.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8D0CC9EC8C0031092D /* UTime.pas */; };
-		2C4D9CBB0CC9EC8C0031092D /* UVideo.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8E0CC9EC8C0031092D /* UVideo.pas */; };
 		2C4D9CBC0CC9EC8C0031092D /* TextGL.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C620CC9EC8C0031092D /* TextGL.pas */; };
 		2C4D9CBF0CC9EC8C0031092D /* UCatCovers.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C650CC9EC8C0031092D /* UCatCovers.pas */; };
 		2C4D9CC00CC9EC8C0031092D /* UCommandLine.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C660CC9EC8C0031092D /* UCommandLine.pas */; };
@@ -63,7 +61,6 @@
 		2C4D9CC80CC9EC8C0031092D /* UFiles.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C6E0CC9EC8C0031092D /* UFiles.pas */; };
 		2C4D9CC90CC9EC8C0031092D /* UGraphic.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C6F0CC9EC8C0031092D /* UGraphic.pas */; };
 		2C4D9CCA0CC9EC8C0031092D /* UGraphicClasses.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C700CC9EC8C0031092D /* UGraphicClasses.pas */; };
-		2C4D9CCB0CC9EC8C0031092D /* UHooks.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C710CC9EC8C0031092D /* UHooks.pas */; };
 		2C4D9CCC0CC9EC8C0031092D /* UIni.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C720CC9EC8C0031092D /* UIni.pas */; };
 		2C4D9CCD0CC9EC8C0031092D /* UJoystick.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C730CC9EC8C0031092D /* UJoystick.pas */; };
 		2C4D9CCE0CC9EC8C0031092D /* ULanguage.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C740CC9EC8C0031092D /* ULanguage.pas */; };
@@ -90,7 +87,6 @@
 		2C4D9CE50CC9EC8C0031092D /* UTexture.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8B0CC9EC8C0031092D /* UTexture.pas */; };
 		2C4D9CE60CC9EC8C0031092D /* UThemes.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8C0CC9EC8C0031092D /* UThemes.pas */; };
 		2C4D9CE70CC9EC8C0031092D /* UTime.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8D0CC9EC8C0031092D /* UTime.pas */; };
-		2C4D9CE80CC9EC8C0031092D /* UVideo.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9C8E0CC9EC8C0031092D /* UVideo.pas */; };
 		2C4D9D920CC9ED4F0031092D /* FreeBitmap.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9D900CC9ED4F0031092D /* FreeBitmap.pas */; };
 		2C4D9D930CC9ED4F0031092D /* FreeImage.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9D910CC9ED4F0031092D /* FreeImage.pas */; };
 		2C4D9D940CC9ED4F0031092D /* FreeBitmap.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D9D900CC9ED4F0031092D /* FreeBitmap.pas */; };
@@ -142,8 +138,8 @@
 		2CAC2BE90D3809F500CA518A /* UAudioPlayback_Bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BDF0D3809F500CA518A /* UAudioPlayback_Bass.pas */; };
 		2CAC2BF10D380AC200CA518A /* libbass.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAC2BF00D380AC200CA518A /* libbass.dylib */; };
 		2CAC2BF40D380AE800CA518A /* libbass.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CAC2BF00D380AC200CA518A /* libbass.dylib */; };
-		2CAC2BF80D380B1B00CA518A /* Bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BF70D380B1B00CA518A /* Bass.pas */; };
-		2CAC2BF90D380B1B00CA518A /* Bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BF70D380B1B00CA518A /* Bass.pas */; };
+		2CAC2BF80D380B1B00CA518A /* bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BF70D380B1B00CA518A /* bass.pas */; };
+		2CAC2BF90D380B1B00CA518A /* bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BF70D380B1B00CA518A /* bass.pas */; };
 		2CB9E87E0D43B78400214DFA /* USong.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E87D0D43B78400214DFA /* USong.pas */; };
 		2CB9E87F0D43B78400214DFA /* USong.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E87D0D43B78400214DFA /* USong.pas */; };
 		2CDC716C0CDB9CB70018F966 /* StrUtils.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC716B0CDB9CB70018F966 /* StrUtils.pas */; };
@@ -201,14 +197,12 @@
 		2CF54F7C0CDA1B2B00627463 /* UScreenPopup.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5A0CDA1B2B00627463 /* UScreenPopup.pas */; };
 		2CF54F7D0CDA1B2B00627463 /* UScreenScore.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5B0CDA1B2B00627463 /* UScreenScore.pas */; };
 		2CF54F7E0CDA1B2B00627463 /* UScreenSing.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5C0CDA1B2B00627463 /* UScreenSing.pas */; };
-		2CF54F7F0CDA1B2B00627463 /* UScreenSingModi.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5D0CDA1B2B00627463 /* UScreenSingModi.pas */; };
 		2CF54F800CDA1B2B00627463 /* UScreenSong.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5E0CDA1B2B00627463 /* UScreenSong.pas */; };
 		2CF54F810CDA1B2B00627463 /* UScreenSongJumpto.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5F0CDA1B2B00627463 /* UScreenSongJumpto.pas */; };
 		2CF54F820CDA1B2B00627463 /* UScreenSongMenu.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F600CDA1B2B00627463 /* UScreenSongMenu.pas */; };
 		2CF54F830CDA1B2B00627463 /* UScreenStatDetail.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F610CDA1B2B00627463 /* UScreenStatDetail.pas */; };
 		2CF54F840CDA1B2B00627463 /* UScreenStatMain.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F620CDA1B2B00627463 /* UScreenStatMain.pas */; };
 		2CF54F850CDA1B2B00627463 /* UScreenTop5.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F630CDA1B2B00627463 /* UScreenTop5.pas */; };
-		2CF54F860CDA1B2B00627463 /* UScreenWelcome.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F640CDA1B2B00627463 /* UScreenWelcome.pas */; };
 		2CF54F870CDA1B2B00627463 /* UScreenCredits.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F430CDA1B2B00627463 /* UScreenCredits.pas */; };
 		2CF54F880CDA1B2B00627463 /* UScreenEdit.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F440CDA1B2B00627463 /* UScreenEdit.pas */; };
 		2CF54F890CDA1B2B00627463 /* UScreenEditConvert.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F450CDA1B2B00627463 /* UScreenEditConvert.pas */; };
@@ -235,14 +229,12 @@
 		2CF54F9E0CDA1B2B00627463 /* UScreenPopup.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5A0CDA1B2B00627463 /* UScreenPopup.pas */; };
 		2CF54F9F0CDA1B2B00627463 /* UScreenScore.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5B0CDA1B2B00627463 /* UScreenScore.pas */; };
 		2CF54FA00CDA1B2B00627463 /* UScreenSing.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5C0CDA1B2B00627463 /* UScreenSing.pas */; };
-		2CF54FA10CDA1B2B00627463 /* UScreenSingModi.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5D0CDA1B2B00627463 /* UScreenSingModi.pas */; };
 		2CF54FA20CDA1B2B00627463 /* UScreenSong.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5E0CDA1B2B00627463 /* UScreenSong.pas */; };
 		2CF54FA30CDA1B2B00627463 /* UScreenSongJumpto.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F5F0CDA1B2B00627463 /* UScreenSongJumpto.pas */; };
 		2CF54FA40CDA1B2B00627463 /* UScreenSongMenu.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F600CDA1B2B00627463 /* UScreenSongMenu.pas */; };
 		2CF54FA50CDA1B2B00627463 /* UScreenStatDetail.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F610CDA1B2B00627463 /* UScreenStatDetail.pas */; };
 		2CF54FA60CDA1B2B00627463 /* UScreenStatMain.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F620CDA1B2B00627463 /* UScreenStatMain.pas */; };
 		2CF54FA70CDA1B2B00627463 /* UScreenTop5.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F630CDA1B2B00627463 /* UScreenTop5.pas */; };
-		2CF54FA80CDA1B2B00627463 /* UScreenWelcome.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF54F640CDA1B2B00627463 /* UScreenWelcome.pas */; };
 		2CF5508C0CDA22B000627463 /* ModiSDK.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5508B0CDA22B000627463 /* ModiSDK.pas */; };
 		2CF5508D0CDA22B000627463 /* ModiSDK.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5508B0CDA22B000627463 /* ModiSDK.pas */; };
 		2CF551100CDA293700627463 /* SQLite3.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5510E0CDA293700627463 /* SQLite3.pas */; };
@@ -376,137 +368,133 @@
 /* Begin PBXFileReference section */
 		2C0199800D99840900974970 /* config-darwin.inc */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = "config-darwin.inc"; path = "../../src/config-darwin.inc"; sourceTree = SOURCE_ROOT; };
 		2C4B70220CF757A400B0F0BD /* Until5000.dpr */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text; name = Until5000.dpr; path = ../../../Modis/5000Points/Until5000.dpr; sourceTree = SOURCE_ROOT; };
-		2C4D9C620CC9EC8C0031092D /* TextGL.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = TextGL.pas; path = ../Classes/TextGL.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C650CC9EC8C0031092D /* UCatCovers.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCatCovers.pas; path = ../Classes/UCatCovers.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C660CC9EC8C0031092D /* UCommandLine.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCommandLine.pas; path = ../Classes/UCommandLine.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C670CC9EC8C0031092D /* UCommon.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCommon.pas; path = ../Classes/UCommon.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C620CC9EC8C0031092D /* TextGL.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = TextGL.pas; path = ../../src/base/TextGL.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C650CC9EC8C0031092D /* UCatCovers.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCatCovers.pas; path = ../../src/base/UCatCovers.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C660CC9EC8C0031092D /* UCommandLine.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCommandLine.pas; path = ../../src/base/UCommandLine.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C670CC9EC8C0031092D /* UCommon.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCommon.pas; path = ../../src/base/UCommon.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C680CC9EC8C0031092D /* UCore.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCore.pas; path = ../Classes/UCore.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C690CC9EC8C0031092D /* UCoreModule.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCoreModule.pas; path = ../Classes/UCoreModule.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C6A0CC9EC8C0031092D /* UCovers.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCovers.pas; path = ../Classes/UCovers.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C6B0CC9EC8C0031092D /* UDataBase.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDataBase.pas; path = ../Classes/UDataBase.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C6A0CC9EC8C0031092D /* UCovers.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UCovers.pas; path = ../../src/base/UCovers.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C6B0CC9EC8C0031092D /* UDataBase.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDataBase.pas; path = ../../src/base/UDataBase.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C6C0CC9EC8C0031092D /* UDLLManager.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDLLManager.pas; path = ../Classes/UDLLManager.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C6D0CC9EC8C0031092D /* UDraw.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDraw.pas; path = ../Classes/UDraw.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C6E0CC9EC8C0031092D /* UFiles.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UFiles.pas; path = ../Classes/UFiles.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C6F0CC9EC8C0031092D /* UGraphic.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UGraphic.pas; path = ../Classes/UGraphic.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C700CC9EC8C0031092D /* UGraphicClasses.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UGraphicClasses.pas; path = ../Classes/UGraphicClasses.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C710CC9EC8C0031092D /* UHooks.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UHooks.pas; path = ../Classes/UHooks.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C720CC9EC8C0031092D /* UIni.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UIni.pas; path = ../Classes/UIni.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C730CC9EC8C0031092D /* UJoystick.pas */ = {isa = PBXFileReference; explicitFileType = sourcecode.pascal; fileEncoding = 5; indentWidth = 2; name = UJoystick.pas; path = ../Classes/UJoystick.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C740CC9EC8C0031092D /* ULanguage.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULanguage.pas; path = ../Classes/ULanguage.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C6D0CC9EC8C0031092D /* UDraw.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDraw.pas; path = ../../src/base/UDraw.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C6E0CC9EC8C0031092D /* UFiles.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UFiles.pas; path = ../../src/base/UFiles.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C6F0CC9EC8C0031092D /* UGraphic.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UGraphic.pas; path = ../../src/base/UGraphic.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C700CC9EC8C0031092D /* UGraphicClasses.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UGraphicClasses.pas; path = ../../src/base/UGraphicClasses.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C720CC9EC8C0031092D /* UIni.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UIni.pas; path = ../../src/base/UIni.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C730CC9EC8C0031092D /* UJoystick.pas */ = {isa = PBXFileReference; explicitFileType = sourcecode.pascal; fileEncoding = 5; indentWidth = 2; name = UJoystick.pas; path = ../../src/base/UJoystick.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C740CC9EC8C0031092D /* ULanguage.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULanguage.pas; path = ../../src/base/ULanguage.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C760CC9EC8C0031092D /* ULCD.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULCD.pas; path = ../Classes/ULCD.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C770CC9EC8C0031092D /* ULight.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULight.pas; path = ../Classes/ULight.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C780CC9EC8C0031092D /* ULog.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULog.pas; path = ../Classes/ULog.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C780CC9EC8C0031092D /* ULog.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULog.pas; path = ../../src/base/ULog.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C790CC9EC8C0031092D /* ULyrics_bak.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULyrics_bak.pas; path = ../Classes/ULyrics_bak.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C7A0CC9EC8C0031092D /* ULyrics.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULyrics.pas; path = ../Classes/ULyrics.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C7B0CC9EC8C0031092D /* UMain.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMain.pas; path = ../Classes/UMain.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C7C0CC9EC8C0031092D /* UMedia_dummy.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMedia_dummy.pas; path = ../Classes/UMedia_dummy.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C7A0CC9EC8C0031092D /* ULyrics.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ULyrics.pas; path = ../../src/base/ULyrics.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C7B0CC9EC8C0031092D /* UMain.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMain.pas; path = ../../src/base/UMain.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C7C0CC9EC8C0031092D /* UMedia_dummy.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMedia_dummy.pas; path = ../../src/media/UMedia_dummy.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C7D0CC9EC8C0031092D /* UModules.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UModules.pas; path = ../Classes/UModules.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C7E0CC9EC8C0031092D /* UMusic.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMusic.pas; path = ../Classes/UMusic.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C7F0CC9EC8C0031092D /* UParty.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UParty.pas; path = ../Classes/UParty.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C800CC9EC8C0031092D /* UPlaylist.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UPlaylist.pas; path = ../Classes/UPlaylist.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C7E0CC9EC8C0031092D /* UMusic.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMusic.pas; path = ../../src/base/UMusic.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C7F0CC9EC8C0031092D /* UParty.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UParty.pas; path = ../../src/base/UParty.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C800CC9EC8C0031092D /* UPlaylist.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UPlaylist.pas; path = ../../src/base/UPlaylist.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C820CC9EC8C0031092D /* UPluginInterface.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UPluginInterface.pas; path = ../Classes/UPluginInterface.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C830CC9EC8C0031092D /* uPluginLoader.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = uPluginLoader.pas; path = ../Classes/uPluginLoader.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C840CC9EC8C0031092D /* URecord.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = URecord.pas; path = ../Classes/URecord.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C840CC9EC8C0031092D /* URecord.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = URecord.pas; path = ../../src/base/URecord.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C850CC9EC8C0031092D /* UServices.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UServices.pas; path = ../Classes/UServices.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C860CC9EC8C0031092D /* USingNotes.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USingNotes.pas; path = ../Classes/USingNotes.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C870CC9EC8C0031092D /* USingScores.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USingScores.pas; path = ../Classes/USingScores.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C880CC9EC8C0031092D /* USkins.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USkins.pas; path = ../Classes/USkins.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C890CC9EC8C0031092D /* USongs.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USongs.pas; path = ../Classes/USongs.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C860CC9EC8C0031092D /* USingNotes.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USingNotes.pas; path = ../../src/base/USingNotes.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C870CC9EC8C0031092D /* USingScores.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USingScores.pas; path = ../../src/base/USingScores.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C880CC9EC8C0031092D /* USkins.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USkins.pas; path = ../../src/base/USkins.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C890CC9EC8C0031092D /* USongs.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = USongs.pas; path = ../../src/base/USongs.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9C8A0CC9EC8C0031092D /* UTextClasses.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UTextClasses.pas; path = ../Classes/UTextClasses.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C8B0CC9EC8C0031092D /* UTexture.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UTexture.pas; path = ../Classes/UTexture.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C8C0CC9EC8C0031092D /* UThemes.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UThemes.pas; path = ../Classes/UThemes.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C8D0CC9EC8C0031092D /* UTime.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UTime.pas; path = ../Classes/UTime.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9C8E0CC9EC8C0031092D /* UVideo.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UVideo.pas; path = ../Classes/UVideo.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9D900CC9ED4F0031092D /* FreeBitmap.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = FreeBitmap.pas; path = ../lib/FreeImage/FreeBitmap.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9D910CC9ED4F0031092D /* FreeImage.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = FreeImage.pas; path = ../lib/FreeImage/FreeImage.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C8B0CC9EC8C0031092D /* UTexture.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UTexture.pas; path = ../../src/base/UTexture.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C8C0CC9EC8C0031092D /* UThemes.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UThemes.pas; path = ../../src/base/UThemes.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9C8D0CC9EC8C0031092D /* UTime.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UTime.pas; path = ../../src/base/UTime.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9D900CC9ED4F0031092D /* FreeBitmap.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = FreeBitmap.pas; path = ../../src/lib/FreeImage/FreeBitmap.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9D910CC9ED4F0031092D /* FreeImage.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = FreeImage.pas; path = ../../src/lib/FreeImage/FreeImage.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9D960CC9EDEB0031092D /* libfreeimage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreeimage.dylib; path = ../lib/FreeImage/libfreeimage.dylib; sourceTree = SOURCE_ROOT; };
 		2C4D9D980CC9EE0B0031092D /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = /Library/Frameworks/SDL_image.framework; sourceTree = "<absolute>"; };
 		2C4D9D990CC9EE0B0031092D /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = /Library/Frameworks/SDL_ttf.framework; sourceTree = "<absolute>"; };
-		2C4D9DCC0CC9EE6F0031092D /* UDisplay.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDisplay.pas; path = ../Menu/UDisplay.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DCD0CC9EE6F0031092D /* UDrawTexture.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDrawTexture.pas; path = ../Menu/UDrawTexture.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DCE0CC9EE6F0031092D /* UMenu.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenu.pas; path = ../Menu/UMenu.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DCF0CC9EE6F0031092D /* UMenuButton.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuButton.pas; path = ../Menu/UMenuButton.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DD00CC9EE6F0031092D /* UMenuButtonCollection.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuButtonCollection.pas; path = ../Menu/UMenuButtonCollection.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DD10CC9EE6F0031092D /* UMenuInteract.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuInteract.pas; path = ../Menu/UMenuInteract.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DCC0CC9EE6F0031092D /* UDisplay.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDisplay.pas; path = ../../src/menu/UDisplay.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DCD0CC9EE6F0031092D /* UDrawTexture.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UDrawTexture.pas; path = ../../src/menu/UDrawTexture.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DCE0CC9EE6F0031092D /* UMenu.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenu.pas; path = ../../src/menu/UMenu.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DCF0CC9EE6F0031092D /* UMenuButton.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuButton.pas; path = ../../src/menu/UMenuButton.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DD00CC9EE6F0031092D /* UMenuButtonCollection.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuButtonCollection.pas; path = ../../src/menu/UMenuButtonCollection.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DD10CC9EE6F0031092D /* UMenuInteract.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuInteract.pas; path = ../../src/menu/UMenuInteract.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9DD20CC9EE6F0031092D /* UMenuSelect.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuSelect.pas; path = ../Menu/UMenuSelect.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DD30CC9EE6F0031092D /* UMenuSelectSlide.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuSelectSlide.pas; path = ../Menu/UMenuSelectSlide.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DD40CC9EE6F0031092D /* UMenuStatic.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuStatic.pas; path = ../Menu/UMenuStatic.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2C4D9DD50CC9EE6F0031092D /* UMenuText.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuText.pas; path = ../Menu/UMenuText.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DD30CC9EE6F0031092D /* UMenuSelectSlide.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuSelectSlide.pas; path = ../../src/menu/UMenuSelectSlide.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DD40CC9EE6F0031092D /* UMenuStatic.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuStatic.pas; path = ../../src/menu/UMenuStatic.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2C4D9DD50CC9EE6F0031092D /* UMenuText.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UMenuText.pas; path = ../../src/menu/UMenuText.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4D9DEC0CC9EF0A0031092D /* sdl_image.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = sdl_image.pas; path = "/Library/Frameworks/JEDI-SDL.framework/SDL_image/sdl_image.pas"; sourceTree = "<absolute>"; tabWidth = 2; };
 		2C4D9DEF0CC9EF210031092D /* sdl_ttf.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = sdl_ttf.pas; path = "/Library/Frameworks/JEDI-SDL.framework/SDL_ttf/sdl_ttf.pas"; sourceTree = "<absolute>"; tabWidth = 2; };
 		2C4D9E040CC9EF840031092D /* OpenGL12.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = OpenGL12.pas; path = Wrapper/OpenGL12.pas; sourceTree = "<group>"; tabWidth = 2; };
 		2C4D9E090CC9EF840031092D /* Windows.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = Windows.pas; path = Wrapper/Windows.pas; sourceTree = "<group>"; tabWidth = 2; };
 		2C4D9E440CC9F0ED0031092D /* switches.inc */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = switches.inc; path = ../../src/switches.inc; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2C4FA2A70CDBAD1E002CC3B0 /* ultrastardx.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = ultrastardx.icns; path = ../../icons/ultrastardx.icns; sourceTree = SOURCE_ROOT; };
-		2C5663EE0D35645700D4FF53 /* portaudio.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = portaudio.pas; path = ../lib/portaudio/delphi/portaudio.pas; sourceTree = SOURCE_ROOT; };
+		2C5663EE0D35645700D4FF53 /* portaudio.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = portaudio.pas; path = ../../src/lib/portaudio/portaudio.pas; sourceTree = SOURCE_ROOT; };
 		2C56642B0D35683200D4FF53 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = "/Library/Frameworks/JEDI-SDL.framework/SDL/SDLMain.m"; sourceTree = "<absolute>"; };
 		2C56642F0D35688200D4FF53 /* SDL.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = SDL.h; path = /Library/Frameworks/SDL.framework/Versions/A/Headers/SDL.h; sourceTree = "<absolute>"; };
-		2C8937290CE393FB005D8A87 /* UPlatform.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = UPlatform.pas; path = ../Classes/UPlatform.pas; sourceTree = SOURCE_ROOT; };
-		2C8937310CE395CE005D8A87 /* UPlatformMacOSX.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; lineEnding = 0; name = UPlatformMacOSX.pas; path = ../Classes/UPlatformMacOSX.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CAC2BDD0D3809F500CA518A /* UAudioInput_Bass.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = UAudioInput_Bass.pas; path = ../Classes/UAudioInput_Bass.pas; sourceTree = SOURCE_ROOT; };
-		2CAC2BDF0D3809F500CA518A /* UAudioPlayback_Bass.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = UAudioPlayback_Bass.pas; path = ../Classes/UAudioPlayback_Bass.pas; sourceTree = SOURCE_ROOT; };
+		2C8937290CE393FB005D8A87 /* UPlatform.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = UPlatform.pas; path = ../../src/base/UPlatform.pas; sourceTree = SOURCE_ROOT; };
+		2C8937310CE395CE005D8A87 /* UPlatformMacOSX.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; lineEnding = 0; name = UPlatformMacOSX.pas; path = ../../src/base/UPlatformMacOSX.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CAC2BDD0D3809F500CA518A /* UAudioInput_Bass.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = UAudioInput_Bass.pas; path = ../../src/media/UAudioInput_Bass.pas; sourceTree = SOURCE_ROOT; };
+		2CAC2BDF0D3809F500CA518A /* UAudioPlayback_Bass.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = UAudioPlayback_Bass.pas; path = ../../src/media/UAudioPlayback_Bass.pas; sourceTree = SOURCE_ROOT; };
 		2CAC2BF00D380AC200CA518A /* libbass.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbass.dylib; path = ../lib/bass/libbass.dylib; sourceTree = SOURCE_ROOT; };
-		2CAC2BF70D380B1B00CA518A /* Bass.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = Bass.pas; path = ../lib/bass/MacOSX/Bass.pas; sourceTree = SOURCE_ROOT; };
-		2CB9E87D0D43B78400214DFA /* USong.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = USong.pas; path = ../Classes/USong.pas; sourceTree = SOURCE_ROOT; };
+		2CAC2BF70D380B1B00CA518A /* bass.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = bass.pas; path = ../../src/lib/bass/delphi/bass.pas; sourceTree = SOURCE_ROOT; };
+		2CB9E87D0D43B78400214DFA /* USong.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = USong.pas; path = ../../src/base/USong.pas; sourceTree = SOURCE_ROOT; };
 		2CDC716B0CDB9CB70018F966 /* StrUtils.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = StrUtils.pas; path = ../../../Modis/SDK/StrUtils.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2CDEA4F60CBD725B0096994C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		2CE603D90D715F2100DB0D88 /* mathematics.pas */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.pascal; name = mathematics.pas; path = ../lib/ffmpeg/mathematics.pas; sourceTree = SOURCE_ROOT; };
-		2CE603DD0D715F6700DB0D88 /* UAudioCore_Bass.pas */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.pascal; name = UAudioCore_Bass.pas; path = ../Classes/UAudioCore_Bass.pas; sourceTree = SOURCE_ROOT; };
-		2CE603E10D715F8600DB0D88 /* UConfig.pas */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.pascal; name = UConfig.pas; path = ../Classes/UConfig.pas; sourceTree = SOURCE_ROOT; };
+		2CE603D90D715F2100DB0D88 /* mathematics.pas */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.pascal; name = mathematics.pas; path = ../../src/lib/ffmpeg/mathematics.pas; sourceTree = SOURCE_ROOT; };
+		2CE603DD0D715F6700DB0D88 /* UAudioCore_Bass.pas */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.pascal; name = UAudioCore_Bass.pas; path = ../../src/media/UAudioCore_Bass.pas; sourceTree = SOURCE_ROOT; };
+		2CE603E10D715F8600DB0D88 /* UConfig.pas */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.pascal; name = UConfig.pas; path = ../../src/base/UConfig.pas; sourceTree = SOURCE_ROOT; };
 		2CE907900D1BC8A800A1FDFF /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = ../lib/ffmpeg/libavcodec.dylib; sourceTree = SOURCE_ROOT; };
 		2CE907910D1BC8A800A1FDFF /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = ../lib/ffmpeg/libavformat.dylib; sourceTree = SOURCE_ROOT; };
 		2CE907920D1BC8A800A1FDFF /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = ../lib/ffmpeg/libavutil.dylib; sourceTree = SOURCE_ROOT; };
 		2CEA2ADE0CE385190097A5FF /* Graphics.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = Graphics.pas; path = Wrapper/Graphics.pas; sourceTree = "<group>"; };
 		2CEA2ADF0CE385190097A5FF /* JPEG.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = JPEG.pas; path = Wrapper/JPEG.pas; sourceTree = "<group>"; };
-		2CEA2AF00CE3868E0097A5FF /* PseudoThread.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = PseudoThread.pas; path = Wrapper/PseudoThread.pas; sourceTree = "<group>"; };
+		2CEA2AF00CE3868E0097A5FF /* PseudoThread.pas */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.pascal; name = PseudoThread.pas; path = ../../src/macosx/PseudoThread.pas; sourceTree = "<group>"; };
 		2CF3EF210CDE13A0004F5956 /* Messages.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = Messages.pas; path = Wrapper/Messages.pas; sourceTree = "<group>"; tabWidth = 2; };
 		2CF3EF260CDE13BA004F5956 /* MacResources.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = MacResources.pas; path = Wrapper/MacResources.pas; sourceTree = "<group>"; tabWidth = 2; };
-		2CF54F430CDA1B2B00627463 /* UScreenCredits.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenCredits.pas; path = ../Screens/UScreenCredits.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F440CDA1B2B00627463 /* UScreenEdit.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEdit.pas; path = ../Screens/UScreenEdit.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F450CDA1B2B00627463 /* UScreenEditConvert.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEditConvert.pas; path = ../Screens/UScreenEditConvert.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F460CDA1B2B00627463 /* UScreenEditHeader.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEditHeader.pas; path = ../Screens/UScreenEditHeader.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F470CDA1B2B00627463 /* UScreenEditSub.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEditSub.pas; path = ../Screens/UScreenEditSub.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F480CDA1B2B00627463 /* UScreenLevel.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenLevel.pas; path = ../Screens/UScreenLevel.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F490CDA1B2B00627463 /* UScreenLoading.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenLoading.pas; path = ../Screens/UScreenLoading.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F4A0CDA1B2B00627463 /* UScreenMain.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenMain.pas; path = ../Screens/UScreenMain.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F4B0CDA1B2B00627463 /* UScreenName.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenName.pas; path = ../Screens/UScreenName.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F4C0CDA1B2B00627463 /* UScreenOpen.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOpen.pas; path = ../Screens/UScreenOpen.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F4D0CDA1B2B00627463 /* UScreenOptions.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptions.pas; path = ../Screens/UScreenOptions.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F4E0CDA1B2B00627463 /* UScreenOptionsAdvanced.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsAdvanced.pas; path = ../Screens/UScreenOptionsAdvanced.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F4F0CDA1B2B00627463 /* UScreenOptionsGame.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsGame.pas; path = ../Screens/UScreenOptionsGame.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F500CDA1B2B00627463 /* UScreenOptionsGraphics.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsGraphics.pas; path = ../Screens/UScreenOptionsGraphics.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F510CDA1B2B00627463 /* UScreenOptionsLyrics.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsLyrics.pas; path = ../Screens/UScreenOptionsLyrics.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F520CDA1B2B00627463 /* UScreenOptionsRecord.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsRecord.pas; path = ../Screens/UScreenOptionsRecord.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F530CDA1B2B00627463 /* UScreenOptionsSound.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsSound.pas; path = ../Screens/UScreenOptionsSound.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F540CDA1B2B00627463 /* UScreenOptionsThemes.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsThemes.pas; path = ../Screens/UScreenOptionsThemes.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F550CDA1B2B00627463 /* UScreenPartyNewRound.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyNewRound.pas; path = ../Screens/UScreenPartyNewRound.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F560CDA1B2B00627463 /* UScreenPartyOptions.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyOptions.pas; path = ../Screens/UScreenPartyOptions.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F570CDA1B2B00627463 /* UScreenPartyPlayer.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyPlayer.pas; path = ../Screens/UScreenPartyPlayer.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F580CDA1B2B00627463 /* UScreenPartyScore.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyScore.pas; path = ../Screens/UScreenPartyScore.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F590CDA1B2B00627463 /* UScreenPartyWin.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyWin.pas; path = ../Screens/UScreenPartyWin.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F5A0CDA1B2B00627463 /* UScreenPopup.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPopup.pas; path = ../Screens/UScreenPopup.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F5B0CDA1B2B00627463 /* UScreenScore.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenScore.pas; path = ../Screens/UScreenScore.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F5C0CDA1B2B00627463 /* UScreenSing.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSing.pas; path = ../Screens/UScreenSing.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F5D0CDA1B2B00627463 /* UScreenSingModi.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSingModi.pas; path = ../Screens/UScreenSingModi.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F5E0CDA1B2B00627463 /* UScreenSong.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSong.pas; path = ../Screens/UScreenSong.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F5F0CDA1B2B00627463 /* UScreenSongJumpto.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSongJumpto.pas; path = ../Screens/UScreenSongJumpto.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F600CDA1B2B00627463 /* UScreenSongMenu.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSongMenu.pas; path = ../Screens/UScreenSongMenu.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F610CDA1B2B00627463 /* UScreenStatDetail.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenStatDetail.pas; path = ../Screens/UScreenStatDetail.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F620CDA1B2B00627463 /* UScreenStatMain.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenStatMain.pas; path = ../Screens/UScreenStatMain.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F630CDA1B2B00627463 /* UScreenTop5.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenTop5.pas; path = ../Screens/UScreenTop5.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF54F640CDA1B2B00627463 /* UScreenWelcome.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenWelcome.pas; path = ../Screens/UScreenWelcome.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F430CDA1B2B00627463 /* UScreenCredits.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenCredits.pas; path = ../../src/screens/UScreenCredits.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F440CDA1B2B00627463 /* UScreenEdit.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEdit.pas; path = ../../src/screens/UScreenEdit.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F450CDA1B2B00627463 /* UScreenEditConvert.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEditConvert.pas; path = ../../src/screens/UScreenEditConvert.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F460CDA1B2B00627463 /* UScreenEditHeader.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEditHeader.pas; path = ../../src/screens/UScreenEditHeader.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F470CDA1B2B00627463 /* UScreenEditSub.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenEditSub.pas; path = ../../src/screens/UScreenEditSub.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F480CDA1B2B00627463 /* UScreenLevel.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenLevel.pas; path = ../../src/screens/UScreenLevel.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F490CDA1B2B00627463 /* UScreenLoading.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenLoading.pas; path = ../../src/screens/UScreenLoading.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F4A0CDA1B2B00627463 /* UScreenMain.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenMain.pas; path = ../../src/screens/UScreenMain.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F4B0CDA1B2B00627463 /* UScreenName.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenName.pas; path = ../../src/screens/UScreenName.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F4C0CDA1B2B00627463 /* UScreenOpen.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOpen.pas; path = ../../src/screens/UScreenOpen.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F4D0CDA1B2B00627463 /* UScreenOptions.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptions.pas; path = ../../src/screens/UScreenOptions.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F4E0CDA1B2B00627463 /* UScreenOptionsAdvanced.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsAdvanced.pas; path = ../../src/screens/UScreenOptionsAdvanced.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F4F0CDA1B2B00627463 /* UScreenOptionsGame.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsGame.pas; path = ../../src/screens/UScreenOptionsGame.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F500CDA1B2B00627463 /* UScreenOptionsGraphics.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsGraphics.pas; path = ../../src/screens/UScreenOptionsGraphics.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F510CDA1B2B00627463 /* UScreenOptionsLyrics.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsLyrics.pas; path = ../../src/screens/UScreenOptionsLyrics.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F520CDA1B2B00627463 /* UScreenOptionsRecord.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsRecord.pas; path = ../../src/screens/UScreenOptionsRecord.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F530CDA1B2B00627463 /* UScreenOptionsSound.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsSound.pas; path = ../../src/screens/UScreenOptionsSound.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F540CDA1B2B00627463 /* UScreenOptionsThemes.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenOptionsThemes.pas; path = ../../src/screens/UScreenOptionsThemes.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F550CDA1B2B00627463 /* UScreenPartyNewRound.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyNewRound.pas; path = ../../src/screens/UScreenPartyNewRound.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F560CDA1B2B00627463 /* UScreenPartyOptions.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyOptions.pas; path = ../../src/screens/UScreenPartyOptions.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F570CDA1B2B00627463 /* UScreenPartyPlayer.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyPlayer.pas; path = ../../src/screens/UScreenPartyPlayer.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F580CDA1B2B00627463 /* UScreenPartyScore.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyScore.pas; path = ../../src/screens/UScreenPartyScore.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F590CDA1B2B00627463 /* UScreenPartyWin.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPartyWin.pas; path = ../../src/screens/UScreenPartyWin.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F5A0CDA1B2B00627463 /* UScreenPopup.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenPopup.pas; path = ../../src/screens/UScreenPopup.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F5B0CDA1B2B00627463 /* UScreenScore.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenScore.pas; path = ../../src/screens/UScreenScore.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F5C0CDA1B2B00627463 /* UScreenSing.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSing.pas; path = ../../src/screens/UScreenSing.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F5E0CDA1B2B00627463 /* UScreenSong.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSong.pas; path = ../../src/screens/UScreenSong.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F5F0CDA1B2B00627463 /* UScreenSongJumpto.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSongJumpto.pas; path = ../../src/screens/UScreenSongJumpto.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F600CDA1B2B00627463 /* UScreenSongMenu.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenSongMenu.pas; path = ../../src/screens/UScreenSongMenu.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F610CDA1B2B00627463 /* UScreenStatDetail.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenStatDetail.pas; path = ../../src/screens/UScreenStatDetail.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F620CDA1B2B00627463 /* UScreenStatMain.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenStatMain.pas; path = ../../src/screens/UScreenStatMain.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF54F630CDA1B2B00627463 /* UScreenTop5.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UScreenTop5.pas; path = ../../src/screens/UScreenTop5.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2CF5508B0CDA22B000627463 /* ModiSDK.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = ModiSDK.pas; path = ../../../Modis/SDK/ModiSDK.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF5510E0CDA293700627463 /* SQLite3.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = SQLite3.pas; path = ../lib/SQLite/SQLite3.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF5510F0CDA293700627463 /* SQLiteTable3.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = SQLiteTable3.pas; path = ../lib/SQLite/SQLiteTable3.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF5510E0CDA293700627463 /* SQLite3.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = SQLite3.pas; path = ../../src/lib/SQLite/SQLite3.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF5510F0CDA293700627463 /* SQLiteTable3.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = SQLiteTable3.pas; path = ../../src/lib/SQLite/SQLiteTable3.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2CF5512C0CDA29C600627463 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../lib/SQLite/libsqlite3.dylib; sourceTree = SOURCE_ROOT; };
-		2CF551A70CDA356800627463 /* UltraStar.dpr */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = text; name = UltraStar.dpr; path = ../UltraStar.dpr; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF551A70CDA356800627463 /* ultrastardx.dpr */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = text; name = ultrastardx.dpr; path = ../../src/ultrastardx.dpr; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2CF552110CDA3D1400627463 /* UPluginDefs.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UPluginDefs.pas; path = ../../../Modis/SDK/UPluginDefs.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF5529E0CDA42C900627463 /* avcodec.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avcodec.pas; path = ../lib/ffmpeg/avcodec.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF5529F0CDA42C900627463 /* avformat.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avformat.pas; path = ../lib/ffmpeg/avformat.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF552A00CDA42C900627463 /* avio.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avio.pas; path = ../lib/ffmpeg/avio.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF552A10CDA42C900627463 /* avutil.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avutil.pas; path = ../lib/ffmpeg/avutil.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF552A40CDA42C900627463 /* opt.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = opt.pas; path = ../lib/ffmpeg/opt.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
-		2CF552A50CDA42C900627463 /* rational.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = rational.pas; path = ../lib/ffmpeg/rational.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF5529E0CDA42C900627463 /* avcodec.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avcodec.pas; path = ../../src/lib/ffmpeg/avcodec.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF5529F0CDA42C900627463 /* avformat.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avformat.pas; path = ../../src/lib/ffmpeg/avformat.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF552A00CDA42C900627463 /* avio.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avio.pas; path = ../../src/lib/ffmpeg/avio.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF552A10CDA42C900627463 /* avutil.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = avutil.pas; path = ../../src/lib/ffmpeg/avutil.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF552A40CDA42C900627463 /* opt.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = opt.pas; path = ../../src/lib/ffmpeg/opt.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		2CF552A50CDA42C900627463 /* rational.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = rational.pas; path = ../../src/lib/ffmpeg/rational.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		2CF553070CDA51B500627463 /* sdlutils.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = sdlutils.pas; path = "/Library/Frameworks/JEDI-SDL.framework/SDL/sdlutils.pas"; sourceTree = "<absolute>"; tabWidth = 2; };
 		2CF77DB60CF7556C00F3B101 /* libUntil5000.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUntil5000.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF8E6BD0CDFA8E80053A996 /* UPartyDefs.pas */ = {isa = PBXFileReference; fileEncoding = 5; indentWidth = 2; lastKnownFileType = sourcecode.pascal; name = UPartyDefs.pas; path = ../../../Modis/SDK/UPartyDefs.pas; sourceTree = SOURCE_ROOT; tabWidth = 2; };
@@ -594,7 +582,7 @@
 		2CAC2BF60D380B0800CA518A /* BASS */ = {
 			isa = PBXGroup;
 			children = (
-				2CAC2BF70D380B1B00CA518A /* Bass.pas */,
+				2CAC2BF70D380B1B00CA518A /* bass.pas */,
 			);
 			name = BASS;
 			sourceTree = "<group>";
@@ -622,7 +610,6 @@
 				2C4D9C6E0CC9EC8C0031092D /* UFiles.pas */,
 				2C4D9C6F0CC9EC8C0031092D /* UGraphic.pas */,
 				2C4D9C700CC9EC8C0031092D /* UGraphicClasses.pas */,
-				2C4D9C710CC9EC8C0031092D /* UHooks.pas */,
 				2C4D9C720CC9EC8C0031092D /* UIni.pas */,
 				2C4D9C730CC9EC8C0031092D /* UJoystick.pas */,
 				2C4D9C740CC9EC8C0031092D /* ULanguage.pas */,
@@ -649,7 +636,6 @@
 				2C4D9C8B0CC9EC8C0031092D /* UTexture.pas */,
 				2C4D9C8C0CC9EC8C0031092D /* UThemes.pas */,
 				2C4D9C8D0CC9EC8C0031092D /* UTime.pas */,
-				2C4D9C8E0CC9EC8C0031092D /* UVideo.pas */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -716,14 +702,12 @@
 				2CF54F5A0CDA1B2B00627463 /* UScreenPopup.pas */,
 				2CF54F5B0CDA1B2B00627463 /* UScreenScore.pas */,
 				2CF54F5C0CDA1B2B00627463 /* UScreenSing.pas */,
-				2CF54F5D0CDA1B2B00627463 /* UScreenSingModi.pas */,
 				2CF54F5E0CDA1B2B00627463 /* UScreenSong.pas */,
 				2CF54F5F0CDA1B2B00627463 /* UScreenSongJumpto.pas */,
 				2CF54F600CDA1B2B00627463 /* UScreenSongMenu.pas */,
 				2CF54F610CDA1B2B00627463 /* UScreenStatDetail.pas */,
 				2CF54F620CDA1B2B00627463 /* UScreenStatMain.pas */,
 				2CF54F630CDA1B2B00627463 /* UScreenTop5.pas */,
-				2CF54F640CDA1B2B00627463 /* UScreenWelcome.pas */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -794,7 +778,7 @@
 				2C4D9DF50CC9EF3A0031092D /* Wrapper */,
 				2CF77DBA0CF755CA00F3B101 /* Modis */,
 				DDC6851B09F57195004E4BFF /* UltraStarDX.pas */,
-				2CF551A70CDA356800627463 /* UltraStar.dpr */,
+				2CF551A70CDA356800627463 /* ultrastardx.dpr */,
 				2C4D9E440CC9F0ED0031092D /* switches.inc */,
 				2C0199800D99840900974970 /* config-darwin.inc */,
 			);
@@ -1076,7 +1060,6 @@
 				2C4D9C9B0CC9EC8C0031092D /* UFiles.pas in Sources */,
 				2C4D9C9C0CC9EC8C0031092D /* UGraphic.pas in Sources */,
 				2C4D9C9D0CC9EC8C0031092D /* UGraphicClasses.pas in Sources */,
-				2C4D9C9E0CC9EC8C0031092D /* UHooks.pas in Sources */,
 				2C4D9C9F0CC9EC8C0031092D /* UIni.pas in Sources */,
 				2C4D9CA00CC9EC8C0031092D /* UJoystick.pas in Sources */,
 				2C4D9CA10CC9EC8C0031092D /* ULanguage.pas in Sources */,
@@ -1103,7 +1086,6 @@
 				2C4D9CB80CC9EC8C0031092D /* UTexture.pas in Sources */,
 				2C4D9CB90CC9EC8C0031092D /* UThemes.pas in Sources */,
 				2C4D9CBA0CC9EC8C0031092D /* UTime.pas in Sources */,
-				2C4D9CBB0CC9EC8C0031092D /* UVideo.pas in Sources */,
 				2C4D9D920CC9ED4F0031092D /* FreeBitmap.pas in Sources */,
 				2C4D9D930CC9ED4F0031092D /* FreeImage.pas in Sources */,
 				2C4D9DD60CC9EE6F0031092D /* UDisplay.pas in Sources */,
@@ -1147,14 +1129,12 @@
 				2CF54F7C0CDA1B2B00627463 /* UScreenPopup.pas in Sources */,
 				2CF54F7D0CDA1B2B00627463 /* UScreenScore.pas in Sources */,
 				2CF54F7E0CDA1B2B00627463 /* UScreenSing.pas in Sources */,
-				2CF54F7F0CDA1B2B00627463 /* UScreenSingModi.pas in Sources */,
 				2CF54F800CDA1B2B00627463 /* UScreenSong.pas in Sources */,
 				2CF54F810CDA1B2B00627463 /* UScreenSongJumpto.pas in Sources */,
 				2CF54F820CDA1B2B00627463 /* UScreenSongMenu.pas in Sources */,
 				2CF54F830CDA1B2B00627463 /* UScreenStatDetail.pas in Sources */,
 				2CF54F840CDA1B2B00627463 /* UScreenStatMain.pas in Sources */,
 				2CF54F850CDA1B2B00627463 /* UScreenTop5.pas in Sources */,
-				2CF54F860CDA1B2B00627463 /* UScreenWelcome.pas in Sources */,
 				2CF5508C0CDA22B000627463 /* ModiSDK.pas in Sources */,
 				2CF551100CDA293700627463 /* SQLite3.pas in Sources */,
 				2CF551110CDA293700627463 /* SQLiteTable3.pas in Sources */,
@@ -1179,7 +1159,7 @@
 				2C56642C0D35683200D4FF53 /* SDLMain.m in Sources */,
 				2CAC2BE20D3809F500CA518A /* UAudioInput_Bass.pas in Sources */,
 				2CAC2BE40D3809F500CA518A /* UAudioPlayback_Bass.pas in Sources */,
-				2CAC2BF80D380B1B00CA518A /* Bass.pas in Sources */,
+				2CAC2BF80D380B1B00CA518A /* bass.pas in Sources */,
 				2CB9E87E0D43B78400214DFA /* USong.pas in Sources */,
 				2CE603DA0D715F2100DB0D88 /* mathematics.pas in Sources */,
 				2CE603DE0D715F6700DB0D88 /* UAudioCore_Bass.pas in Sources */,
@@ -1206,7 +1186,6 @@
 				2C4D9CC80CC9EC8C0031092D /* UFiles.pas in Sources */,
 				2C4D9CC90CC9EC8C0031092D /* UGraphic.pas in Sources */,
 				2C4D9CCA0CC9EC8C0031092D /* UGraphicClasses.pas in Sources */,
-				2C4D9CCB0CC9EC8C0031092D /* UHooks.pas in Sources */,
 				2C4D9CCC0CC9EC8C0031092D /* UIni.pas in Sources */,
 				2C4D9CCD0CC9EC8C0031092D /* UJoystick.pas in Sources */,
 				2C4D9CCE0CC9EC8C0031092D /* ULanguage.pas in Sources */,
@@ -1233,7 +1212,6 @@
 				2C4D9CE50CC9EC8C0031092D /* UTexture.pas in Sources */,
 				2C4D9CE60CC9EC8C0031092D /* UThemes.pas in Sources */,
 				2C4D9CE70CC9EC8C0031092D /* UTime.pas in Sources */,
-				2C4D9CE80CC9EC8C0031092D /* UVideo.pas in Sources */,
 				2C4D9D940CC9ED4F0031092D /* FreeBitmap.pas in Sources */,
 				2C4D9D950CC9ED4F0031092D /* FreeImage.pas in Sources */,
 				2C4D9DE00CC9EE6F0031092D /* UDisplay.pas in Sources */,
@@ -1277,14 +1255,12 @@
 				2CF54F9E0CDA1B2B00627463 /* UScreenPopup.pas in Sources */,
 				2CF54F9F0CDA1B2B00627463 /* UScreenScore.pas in Sources */,
 				2CF54FA00CDA1B2B00627463 /* UScreenSing.pas in Sources */,
-				2CF54FA10CDA1B2B00627463 /* UScreenSingModi.pas in Sources */,
 				2CF54FA20CDA1B2B00627463 /* UScreenSong.pas in Sources */,
 				2CF54FA30CDA1B2B00627463 /* UScreenSongJumpto.pas in Sources */,
 				2CF54FA40CDA1B2B00627463 /* UScreenSongMenu.pas in Sources */,
 				2CF54FA50CDA1B2B00627463 /* UScreenStatDetail.pas in Sources */,
 				2CF54FA60CDA1B2B00627463 /* UScreenStatMain.pas in Sources */,
 				2CF54FA70CDA1B2B00627463 /* UScreenTop5.pas in Sources */,
-				2CF54FA80CDA1B2B00627463 /* UScreenWelcome.pas in Sources */,
 				2CF5508D0CDA22B000627463 /* ModiSDK.pas in Sources */,
 				2CF551120CDA293700627463 /* SQLite3.pas in Sources */,
 				2CF551130CDA293700627463 /* SQLiteTable3.pas in Sources */,
@@ -1308,7 +1284,7 @@
 				2C5663F00D35645700D4FF53 /* portaudio.pas in Sources */,
 				2CAC2BE70D3809F500CA518A /* UAudioInput_Bass.pas in Sources */,
 				2CAC2BE90D3809F500CA518A /* UAudioPlayback_Bass.pas in Sources */,
-				2CAC2BF90D380B1B00CA518A /* Bass.pas in Sources */,
+				2CAC2BF90D380B1B00CA518A /* bass.pas in Sources */,
 				2CB9E87F0D43B78400214DFA /* USong.pas in Sources */,
 				2CE603DB0D715F2100DB0D88 /* mathematics.pas in Sources */,
 				2CE603DF0D715F6700DB0D88 /* UAudioCore_Bass.pas in Sources */,
@@ -1409,6 +1385,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = 4.0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_GLOBAL_CONSTRUCTORS = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
