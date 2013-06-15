@@ -24,4 +24,6 @@ dists/xcode/build/*
 *.pbxuser
 *.perspectivev3
 *.mode1*
+config.h
+stamp-h*
 

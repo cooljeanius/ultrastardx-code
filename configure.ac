@@ -20,10 +20,10 @@ AC_INIT([ultrastardx],
         [http://sourceforge.net/tracker/?group_id=191560&atid=937872])
 # specify the website here
 PACKAGE_WEBSITE="http://www.ultrastardeluxe.org/"
-AC_SUBST(PACKAGE_WEBSITE)
+AC_SUBST([PACKAGE_WEBSITE])
 # specify the IRC-channel here
 PACKAGE_IRC="#ultrastardx at quakenet.org"
-AC_SUBST(PACKAGE_IRC)
+AC_SUBST([PACKAGE_IRC])
 
 # Specify a source-file so autoconf can check if the source-dir exists
 AC_CONFIG_SRCDIR([src/ultrastardx.dpr])
@@ -201,13 +201,13 @@ PKG_HAVE([sqlite3], [sqlite3], [yes])
 # find lua 5.1
 # (K)Ubuntu uses lua5.1.pc, Mac OS X and other 
 # linux distributions use lua.pc
-PKG_HAVE([lua], [lua5.1], no)
+PKG_HAVE([lua], [lua5.1], [no])
 lua_LIB_NAME="lua5.1"
 if [[ x$lua_HAVE = xno ]]; then
-    PKG_HAVE([lua], [lua >= 5.1], yes)
+    PKG_HAVE([lua], [lua >= 5.1], [yes])
     lua_LIB_NAME="lua"
 fi
-AC_SUBST(lua_LIB_NAME)
+AC_SUBST([lua_LIB_NAME])
 
 # find FFMpeg
 # Note: do not use the min/max version parameters with ffmpeg
@@ -231,7 +231,7 @@ if [[ x$libavcodec_HAVE = xyes -a x$libavformat_HAVE = xyes -a x$libavutil_HAVE 
 else
     ffmpeg_HAVE=no
 fi
-AC_SUBST_DEFINE(HAVE_FFMPEG, $ffmpeg_HAVE)
+AC_SUBST_DEFINE([HAVE_FFMPEG], [$ffmpeg_HAVE])
 
 # find FFMpeg's swscale lib (just if FFMpeg is compiled in GPL mode)
 PKG_HAVE([libswscale], [libswscale], [no])
@@ -256,7 +256,7 @@ if [[ "$libprojectM_VERSION_MAJOR" -ge 1 ]]; then
 else
     libprojectM_USE_CWRAPPER=no
 fi
-AC_SUBST(USE_PROJECTM_CWRAPPER, $libprojectM_USE_CWRAPPER)
+AC_SUBST([USE_PROJECTM_CWRAPPER], [$libprojectM_USE_CWRAPPER])
 
 # find portaudio
 PKG_HAVE([portaudio], [portaudio-2.0], [yes])
@@ -274,8 +274,8 @@ PKG_VALUE([libpcre], [LIBDIR], [variable=libdir], [$libpcre_PKG],
           [library dir (e.g. /usr/lib, /sw/lib, ...)])
 
 # find portmixer
-PKG_HAVE([portmixer], [portmixer], no)
-AC_SUBST_DEFINE(HAVE_PORTMIXER, $portmixer_HAVE)
+PKG_HAVE([portmixer], [portmixer], [no])
+AC_SUBST_DEFINE([HAVE_PORTMIXER], [$portmixer_HAVE])
 
 # determine linker-flags
 if test x$FPC_PLATFORM = xdarwin; then
@@ -283,8 +283,8 @@ if test x$FPC_PLATFORM = xdarwin; then
 fi
 
 #LIBS=
-AC_SUBST(LDFLAGS)
-AC_SUBST(LIBS)
+AC_SUBST([LDFLAGS])
+AC_SUBST([LIBS])
 
 # -----------------------------------------
 # create output files
