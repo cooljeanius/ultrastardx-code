@@ -50,61 +50,61 @@
 
 AC_DEFUN([AC_PROG_FPC], [
 
-##
-# User PFLAGS
-##
+dnl##
+dnl# User PFLAGS
+dnl##
 
-AC_ARG_VAR(PFLAGS, [Free Pascal Compiler flags (replaces all other flags)])
-AC_ARG_VAR(PFLAGS_BASE,    [Free Pascal Compiler base flags, e.g. -Si])
-AC_ARG_VAR(PFLAGS_DEBUG,   [Free Pascal Compiler debug flags, e.g. -gl])
-AC_ARG_VAR(PFLAGS_RELEASE, [Free Pascal Compiler release flags, e.g. -O2])
-AC_ARG_VAR(PFLAGS_EXTRA,   [Free Pascal Compiler additional flags])
+AC_ARG_VAR([PFLAGS], [Free Pascal Compiler flags (replaces all other flags)])
+AC_ARG_VAR([PFLAGS_BASE],    [Free Pascal Compiler base flags, e.g. -Si])
+AC_ARG_VAR([PFLAGS_DEBUG],   [Free Pascal Compiler debug flags, e.g. -gl])
+AC_ARG_VAR([PFLAGS_RELEASE], [Free Pascal Compiler release flags, e.g. -O2])
+AC_ARG_VAR([PFLAGS_EXTRA],   [Free Pascal Compiler additional flags])
 
 ##
 # Compiler options
 ##
 
-AC_ARG_ENABLE(dummy_fpc1,[
+AC_ARG_ENABLE([dummy_fpc1],[
 Free Pascal Compiler specific options:])
 
 # fpc path
-AC_ARG_WITH(fpc,
+AC_ARG_WITH([fpc],
   [AS_HELP_STRING([--with-fpc=DIR],
     [Directory of the FPC executable @<:@PATH@:>@])],
   [PPC_PATH=$withval], [])
 
 # verbose
-AC_ARG_ENABLE(verbose,
+AC_ARG_ENABLE([verbose],
   [AS_HELP_STRING([--disable-verbose],
     [Disable verbose compiler output @<:@default=no@:>@])],
   [test x$enableval = xno && PFLAGS_EXTRA="$PFLAGS_EXTRA -v0Bew"], [])
 
 # gprof
-AC_ARG_ENABLE(gprof,
+AC_ARG_ENABLE([gpro]f,
   [AS_HELP_STRING([--enable-gprof],
     [Enable profiling with gprof @<:@default=no@:>@])],
   [test x$enableval = xyes && PFLAGS_EXTRA="$PFLAGS_EXTRA -pg"], [])
 
 # valgrind
-AC_ARG_ENABLE(valgrind,
+AC_ARG_ENABLE([valgrind],
   [AS_HELP_STRING([--enable-valgrind],
     [Enable debugging with valgrind @<:@default=no@:>@])],
   [test x$enableval = xyes && PFLAGS_EXTRA="$PFLAGS_EXTRA -gv"], [])
 
 # heaptrace
-AC_ARG_ENABLE(heaptrace,
+AC_ARG_ENABLE([heaptrace],
   [AS_HELP_STRING([--enable-heaptrace],
     [Enable heaptrace (memory corruption detection) @<:@default=no@:>@])],
   [test x$enableval = xyes && PFLAGS_EXTRA="$PFLAGS_EXTRA -gh"], [])
 
 # range-checks
-AC_ARG_ENABLE(rangechecks,
+AC_ARG_ENABLE([rangechecks],
   [AS_HELP_STRING([--enable-rangechecks],
     [Enables range-checks @<:@default=no@:>@])],
   [test x$enableval = xyes && PFLAGS_EXTRA="$PFLAGS_EXTRA -Crtoi"], [])
 
 # allow execstack (see noexecstack compiler check below)
-AC_ARG_ENABLE(noexecstack,
+AC_ARG_ENABLE([noexecstack],
   [AS_HELP_STRING([--disable-noexecstack],
     [Allow executable stacks @<:@default=no@:>@])],
   [], [enable_noexecstack="yes"])
@@ -117,11 +117,11 @@ PPC_CHECK_PROGS="fpc FPC ppc386 ppc PPC386"
 
 if test -z "$PPC_PATH"; then
     PPC_PATH=$PATH
-    AC_CHECK_PROGS(PPC, $PPC_CHECK_PROGS)
-    AC_CHECK_PROGS(FPCMAKE, [fpcmake])
+    AC_CHECK_PROGS([PPC], [$PPC_CHECK_PROGS])
+    AC_CHECK_PROGS([FPCMAKE], [fpcmake])
 else
-    AC_PATH_PROGS(PPC, $PPC_CHECK_PROGS, [], $PPC_PATH)
-    AC_PATH_PROGS(FPCMAKE, [fpcmake], [], $PPC_PATH)
+    AC_PATH_PROGS([PPC], [$PPC_CHECK_PROGS], [], [$PPC_PATH])
+    AC_PATH_PROGS([FPCMAKE], [fpcmake], [], $PPC_PATH)
 fi
 if test -z "$PPC"; then
     AC_MSG_ERROR([no Free Pascal Compiler found in $PPC_PATH])
@@ -133,7 +133,7 @@ fi
 
 AC_MSG_CHECKING([version of fpc])
 FPC_VERSION=`${PPC} -iV`
-AX_EXTRACT_VERSION(FPC, $FPC_VERSION)
+AX_EXTRACT_VERSION([FPC],[$FPC_VERSION])
 AC_SUBST(FPC_VERSION)
 AC_MSG_RESULT([@<:@$FPC_VERSION@:>@])
 
@@ -145,11 +145,11 @@ FPC_CPROCESSOR=`${PPC} -iSP`
 FPC_TARGET=${FPC_PROCESSOR}-${FPC_PLATFORM}
 
 
-AC_SUBST(FPC_PLATFORM)
-AC_SUBST(FPC_PROCESSOR)
-AC_SUBST(FPC_CPLATFORM)
-AC_SUBST(FPC_CPROCESSOR)
-AC_SUBST(FPC_TARGET)
+AC_SUBST([FPC_PLATFORM])
+AC_SUBST([FPC_PROCESSOR])
+AC_SUBST([FPC_CPLATFORM])
+AC_SUBST([FPC_CPROCESSOR])
+AC_SUBST([FPC_TARGET])
 
 ###
 # Get paths
@@ -164,9 +164,9 @@ fi
 FPC_BASE_PATH="${FPC_PREFIX}/lib/fpc/${FPC_VERSION}"
 FPC_UNIT_PATH="${FPC_BASE_PATH}/units/${FPC_TARGET}"
 
-AC_SUBST(FPC_PREFIX)
-AC_SUBST(FPC_BASE_PATH)
-AC_SUBST(FPC_UNIT_PATH)
+AC_SUBST([FPC_PREFIX])
+AC_SUBST([FPC_BASE_PATH])
+AC_SUBST([FPC_UNIT_PATH])
 
 ###
 # Compiler checks
@@ -175,7 +175,7 @@ AC_SUBST(FPC_UNIT_PATH)
 SIMPLE_PROGRAM="program foo; begin writeln; end."
 
 # Check if FPC works and can compile a program
-AC_CACHE_CHECK([whether the Free Pascal Compiler works], ac_cv_prog_ppc_works,
+AC_CACHE_CHECK([whether the Free Pascal Compiler works], [ac_cv_prog_ppc_works],
 [
     AC_PROG_FPC_CHECK([ac_cv_prog_ppc_works], [], [$SIMPLE_PROGRAM])
 ])
@@ -184,7 +184,7 @@ if test x$ac_cv_prog_ppc_works = xno; then
 fi
 
 # Check if FPC can link with standard libraries
-AC_CACHE_CHECK([whether the Free Pascal Compiler can link], ac_cv_prog_ppc_links,
+AC_CACHE_CHECK([whether the Free Pascal Compiler can link], [ac_cv_prog_ppc_links],
 [
     AC_PROG_FPC_CHECK([ac_cv_prog_ppc_links], [],
         [program foo; uses crt; begin writeln; end.]
@@ -220,32 +220,32 @@ true ${PFLAGS_EXTRA:=\$(PFLAGS_EXTRA_DEFAULT)}
 true ${PFLAGS_DEBUG:=\$(PFLAGS_DEBUG_DEFAULT)}
 true ${PFLAGS_RELEASE:=\$(PFLAGS_RELEASE_DEFAULT)}
 
-AC_SUBST(PFLAGS)
-AC_SUBST(PFLAGS_BASE)
-AC_SUBST(PFLAGS_EXTRA)
-AC_SUBST(PFLAGS_DEBUG)
-AC_SUBST(PFLAGS_RELEASE)
+AC_SUBST([PFLAGS])
+AC_SUBST([PFLAGS_BASE])
+AC_SUBST([PFLAGS_EXTRA])
+AC_SUBST([PFLAGS_DEBUG])
+AC_SUBST([PFLAGS_RELEASE])
 
 ])
 
-#######################################
-# Helper functions
-#######################################
+dnl#######################################
+dnl# Helper functions
+dnl#######################################
 
-# SYNOPSIS
-# 
-#   AC_PROG_FPC_CHECK(RESULT, FPC_FLAGS, CODE)
-#
-# DESCRIPTION
-#
-#   Checks if FPC is able to compile CODE with FPC_FLAGS.
-#   The result ("yes" on success, "no" otherwise) is
-#   stored in [$RESULT]
-#
-#   Parameters:
-#     RESULT:    Name of result variable
-#     FPC_FLAGS: Flags passed to FPC
-#     CODE:      
+dnl# SYNOPSIS
+dnl# 
+dnl#   AC_PROG_FPC_CHECK([RESULT], [FPC_FLAGS], [CODE])
+dnl#
+dnl# DESCRIPTION
+dnl#
+dnl#   Checks if FPC is able to compile CODE with FPC_FLAGS.
+dnl#   The result ("yes" on success, "no" otherwise) is
+dnl#   stored in [$RESULT]
+dnl#
+dnl#   Parameters:
+dnl#     RESULT:    Name of result variable
+dnl#     FPC_FLAGS: Flags passed to FPC
+dnl#     CODE:      
 
 AC_DEFUN([AC_PROG_FPC_CHECK],
 [
@@ -266,3 +266,5 @@ AC_DEFUN([AC_PROG_FPC_CHECK],
     # remove test file
     rm -f conftest*
 ])
+
+dnl# EOF

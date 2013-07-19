@@ -1,15 +1,16 @@
-#
-# ultrastardx configure.ac script
-#
-# by UltraStar Deluxe Team
-#
-# Execute "autogen.sh" or "make reconf"
-# to create the configure script.
-#
-# Helper macros have been separated to
-#   ax_extract_version.m4 (AX_EXTRACT_VERSION)
-#   pkg_config_utils.m4   (PKG_VALUE, PKG_VERSION, PKG_HAVE)
-#
+dnl#
+dnl# ultrastardx configure.ac script
+dnl#
+dnl# by UltraStar Deluxe Team
+dnl#
+dnl# Execute "autogen.sh" or "make reconf"
+dnl# or `autoconf` or `autoreconf`
+dnl# to create the configure script.
+dnl#
+dnl# Helper macros have been separated to
+dnl#   ax_extract_version.m4 (AX_EXTRACT_VERSION)
+dnl#   pkg_config_utils.m4   (PKG_VALUE, PKG_VERSION, PKG_HAVE)
+dnl#
 
 # Require autoconf >= 2.61
 AC_PREREQ([2.61])
@@ -41,15 +42,18 @@ AC_CONFIG_HEADERS([config.h])
 # show features and packages in one list
 AC_PRESERVE_HELP_ORDER
 
+# Find what platform this is...
+AC_CANONICAL_HOST
+# ...and which platform we are compiling for
+AC_CANONICAL_TARGET
+
 # Use automake
-AM_INIT_AUTOMAKE([foreign])
+AM_INIT_AUTOMAKE([foreign 1.10 dejagnu dist-zip -Wall])
 AM_MAINTAINER_MODE
 
-# From the autoconf-archive package
+# Check for GNU make
 AX_CHECK_GNU_MAKE
-
-# Find what platform this is
-AC_CANONICAL_HOST
+AC_BAKEFILE_GNUMAKE
 
 # -----------------------------------------
 # find tools
@@ -70,15 +74,15 @@ AC_PROG_GREP
 AC_PROG_EGREP
 
 # Other things to check
+AC_OBJEXT
 AC_EXEEXT
-AC_PATH_PROG([UNAME],[uname])
 
-# -----------------------------------------
-# macro declarations
-# -----------------------------------------
+dnl# -----------------------------------------
+dnl# macro declarations
+dnl# -----------------------------------------
 
-# AC_SUBST_DEFINE(DEFINE_SUFFIX, IS_DEFINED)
-# used to enable/disable pascal defines
+dnl# AC_SUBST_DEFINE([DEFINE_SUFFIX], [IS_DEFINED])
+dnl# used to enable/disable pascal defines
 AC_DEFUN([AC_SUBST_DEFINE],
 [
     if [[ x$2 = xyes ]]; then
@@ -131,7 +135,7 @@ AC_ARG_ENABLE([debug],
   [AS_HELP_STRING([--enable-debug],
     [Enable debug build @<:@default=no@:>@])],
   [test $enableval = "yes" && ENABLE_DEBUG="yes"], [])
-AC_SUBST(ENABLE_DEBUG)
+AC_SUBST([ENABLE_DEBUG])
 
 # -----------------------------------------
 # check for compilers
@@ -144,12 +148,12 @@ AC_SUBST(ENABLE_DEBUG)
 AC_PROG_FPC
 
 # find and test the C compiler (for C-libs and wrappers)
-AC_PROG_CC
 AC_LANG([C])
+AC_PROG_CC
 
 # find and test the C++ compiler (for C-libs and wrappers)
-AC_PROG_CXX
 AC_LANG([C++])
+AC_PROG_CXX
 
 AC_PROG_RANLIB
 
@@ -172,6 +176,10 @@ if test x$FPC_PLATFORM = xdarwin; then
    AC_PATH_PROG([OTOOL],[otool])
    AC_PATH_PROG([INSTALL_NAME_TOOL],[install_name_tool])
    AC_PATH_PROG([HDIUTIL],[hdiutil])
+else
+   # "uname" is checked for by the AC_MACOSX_VERSION macro now
+   # so there is no need to check for it independently on darwin
+   AC_PATH_PROG([UNAME],[uname])
 fi
 
 # -----------------------------------------
@@ -243,7 +251,7 @@ AC_SUBST_DEFINE([HAVE_SWSCALE], [$libswscale_HAVE])
 libprojectM_PKG="libprojectM >= 0.98"
 PKG_HAVE([libprojectM], [$libprojectM_PKG], [no])
 PKG_VERSION([libprojectM], [$libprojectM_PKG])
-AC_SUBST_DEFINE(HAVE_PROJECTM, $libprojectM_HAVE)
+AC_SUBST_DEFINE([HAVE_PROJECTM], [$libprojectM_HAVE])
 # get projectM include-dir
 PKG_VALUE([libprojectM], [INCLUDEDIR], [variable=includedir], [$libprojectM_PKG], 
           [C-Header include-dir (e.g. /usr/include)])
@@ -268,7 +276,7 @@ AC_SUBST_DEFINE([HAVE_PORTAUDIO], [$portaudio_HAVE])
 libpcre_PKG="libpcre"
 PKG_HAVE([libpcre], [$libpcre_PKG], [no])
 PKG_VERSION([libpcre], [$libpcre_PKG])
-AC_SUBST_DEFINE(HAVE_LIBPCRE, $libpcre_HAVE)
+AC_SUBST_DEFINE([HAVE_LIBPCRE], [$libpcre_HAVE])
 # get libpcre library dir
 PKG_VALUE([libpcre], [LIBDIR], [variable=libdir], [$libpcre_PKG], 
           [library dir (e.g. /usr/lib, /sw/lib, ...)])

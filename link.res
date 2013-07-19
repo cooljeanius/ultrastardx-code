@@ -86,7 +86,7 @@ i386
 -L/sw2/lib/fpc/2.6.2/units/i386-darwin/bfd/
 -L/sw2/lib/fpc/2.6.2/units/i386-darwin/aspell/
 -L/sw2/lib/fpc/2.6.2/units/i386-darwin/
--L/sw/bin/
+-L/sw2/bin/
 conftest.o
 /sw2/lib/fpc/2.6.2/units/i386-darwin/rtl/system.o
 -lc

@@ -26,4 +26,6 @@ dists/xcode/build/*
 *.mode1*
 config.h
 stamp-h*
-
+*(Autosaved)*
+confdefs*
+conftest*

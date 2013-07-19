@@ -122,8 +122,8 @@ all-deps:
 	  $(MAKE) -C "$$dir" all; \
 	done
 
-.PHONY: clean
-clean: clean-src clean-deps
+.PHONY: clean-local
+clean-local: clean-src clean-deps
 
 .PHONY: clean-src
 clean-src:
@@ -145,18 +145,18 @@ clean-game:
 	-rmdir $(USDX_GAME_DIR)/songs
 
 # just clean the game build data but no dependencies (libs, tools, ...)
-.PHONY: mostlyclean
-mostlyclean: clean-src
+.PHONY: mostlyclean-local
+mostlyclean-local: clean-src
 
-.PHONY: distclean
-distclean: clean clean-game
+.PHONY: distclean-local
+distclean-local: clean clean-game
 	$(RM) config.log config.status aclocal.m4 
 	$(RM_REC) autom4te.cache
 	$(RM) $(USDX_SRC_DIR)/config.inc 
 	$(RM) $(srcdir)/Makefile $(USDX_SRC_DIR)/Makefile $(PROJECTM_CWRAPPER_DIR)/Makefile
 
-.PHONY: maintainer-clean
-maintainer-clean: distclean
+.PHONY: maintainer-clean-local
+maintainer-clean-local: distclean
 
 # remove temporary and backup files
 .PHONY: tidy
@@ -174,7 +174,8 @@ tidy:
 # auto-update
 #################################################
 
-Makefile: $(srcdir)/Makefile.in $(USDX_SRC_DIR)/Makefile.in $(USDX_SRC_DIR)/config.inc.in $(PROJECTM_CWRAPPER_DIR)/Makefile.in config.status
+.PHONY: Makefile-reconf
+Makefile-reconf: $(srcdir)/Makefile.in $(USDX_SRC_DIR)/Makefile.in $(USDX_SRC_DIR)/config.inc.in $(PROJECTM_CWRAPPER_DIR)/Makefile.in config.status
 	@echo "-----------------------------------"
 	@echo "Performing reconfiguration..."
 	./config.status
@@ -185,7 +186,7 @@ config.status: configure
 
 .PHONY: reconf
 reconf:
-	./autogen.sh
+	$(SHELL) ./autogen.sh
 
 #################################################
 # install/uninstall
@@ -201,23 +202,24 @@ reconf:
 #   otherwise Gentoo will not be able to install as it uses a sandbox.
 ##
 
-.PHONY: install
-install: install-all
+.PHONY: install-usdx
+install-usdx: install-all
 	@echo "--------------------------------"
 	@echo "$(USDX_PACKAGE_NAME) installed."
 	@echo "Start with: $(bindir)/$(USDX_BIN_NAME)"
 	@echo "--------------------------------"
 
 # strip binaries during install
-install-strip:
+.PHONY: install-usdx-with-strip
+install-usdx-with-strip:
 	$(MAKE) INSTALL_PROGRAM='$(INSTALL_PROGRAM) -s' \
                 install
 
 .PHONY: install-all
 install-all: install-exec install-plugins install-data
 
-.PHONY: install-exec
-install-exec:
+.PHONY: install-exec-local
+install-exec-local:
 	$(MKDIR) "$(DESTDIR)$(bindir)"
 	$(INSTALL_PROGRAM) "$(USDX_BIN)" "$(DESTDIR)$(bindir)"
 
@@ -230,8 +232,8 @@ install-plugins:
 	$(MKDIR) "$(DESTDIR)$(INSTALL_DATADIR)/plugins"
 	$(INSTALL) "$(USDX_GAME_DIR)/plugins"/* "$(DESTDIR)$(INSTALL_DATADIR)/plugins"
 
-.PHONY: install-data
-install-data:
+.PHONY: install-data-local
+install-data-local:
 	$(MAKE) RECURSIVE_SRC_DIR="$(USDX_GAME_DIR)/languages" \
             RECURSIVE_DST_DIR="$(DESTDIR)$(INSTALL_DATADIR)/languages" \
             install-data-recursive
@@ -268,8 +270,8 @@ install-data-recursive:
 	  fi; \
 	done
 
-.PHONY: uninstall
-uninstall: uninstall-all
+.PHONY: uninstall-local
+uninstall-local: uninstall-all
 
 .PHONY: uninstall-all
 uninstall-all: uninstall-data uninstall-exec uninstall-plugins

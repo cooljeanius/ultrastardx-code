@@ -32,12 +32,12 @@ EXEEXT ?=
 #################################################
 
 # recursive dir creation tool (mkdir -p)
-MKDIR        ?= /opt/local/bin/gmkdir -p
+MKDIR        ?= /sw2/bin/gmkdir -p
 RM           ?= rm -f
 RM_REC       ?= $(RM) -r
 
 # install tool
-INSTALL         ?= /opt/local/bin/ginstall -c
+INSTALL         ?= /sw2/bin/ginstall -c
 INSTALL_DATA    ?= ${INSTALL} -m 644
 INSTALL_PROGRAM ?= ${INSTALL}
 
