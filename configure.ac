@@ -12,13 +12,11 @@ dnl#   ax_extract_version.m4 (AX_EXTRACT_VERSION)
 dnl#   pkg_config_utils.m4   (PKG_VALUE, PKG_VERSION, PKG_HAVE)
 dnl#
 
-# Require autoconf >= 2.61
-AC_PREREQ([2.61])
+# Require autoconf >= 2.69
+AC_PREREQ([2.69])
 
 # Init autoconf
-AC_INIT([ultrastardx], 
-        [1.1-beta], 
-        [http://sourceforge.net/tracker/?group_id=191560&atid=937872])
+AC_INIT([ultrastardx],[1.1-beta],[http://sourceforge.net/tracker/?group_id=191560&atid=937872])
 # specify the website here
 PACKAGE_WEBSITE="http://www.ultrastardeluxe.org/"
 AC_SUBST([PACKAGE_WEBSITE])
@@ -62,7 +60,7 @@ AC_BAKEFILE_GNUMAKE
 # options for make command
 AC_PROG_MAKE_SET
 # find tool for ln -s (e.g. uses cp -p for FAT-filesystems)
-AC_LN_S
+AC_PROG_LN_S
 # find a program for recursive dir creation
 AC_PROG_MKDIR_P
 # find the best install tool
