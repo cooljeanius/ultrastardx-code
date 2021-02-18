@@ -22,20 +22,20 @@ PACKAGE_WEBSITE="http://www.ultrastardeluxe.org/"
 AC_SUBST([PACKAGE_WEBSITE])
 # specify the IRC-channel here
 PACKAGE_IRC="#ultrastardx at quakenet.org"
-AC_SUBST([PACKAGE_IRC])
+AC_SUBST([PACKAGE_IRC])dnl
 
 # Specify a source-file so autoconf can check if the source-dir exists
-AC_CONFIG_SRCDIR([src/ultrastardx.dpr])
+AC_CONFIG_SRCDIR([src/ultrastardx.dpr])dnl
 
 # Set the path to install-sh
-AC_CONFIG_AUX_DIR([dists/autogen])
+AC_CONFIG_AUX_DIR([dists/autogen])dnl
 
 # Path to extra m4 macros
-AC_CONFIG_MACRO_DIR([dists/autogen/m4])
+AC_CONFIG_MACRO_DIR([dists/autogen/m4])dnl
 
 # Path to configure header 
 # (not needed as this project isn't C, but whatever)
-AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_HEADERS([config.h])dnl
 
 # show features and packages in one list
 AC_PRESERVE_HELP_ORDER
@@ -89,7 +89,7 @@ AC_DEFUN([AC_SUBST_DEFINE],
 	DEFINE_[$1]=UNDEF
     fi
     AC_SUBST(DEFINE_[$1])
-])
+])dnl
 
 # -----------------------------------------
 # define switches
@@ -97,27 +97,29 @@ AC_DEFUN([AC_SUBST_DEFINE],
 
 # print library options header
 AC_ARG_WITH([cfg-dummy1], [
-External Libraries:])
+External Libraries:])dnl
 
 # add portmixer option
 AC_ARG_WITH([portmixer],
     [AS_HELP_STRING([--with-portmixer],
       [enable portmixer audio-mixer support @<:@default=check@:>@])],
-    [with_portmixer=$withval], [with_portmixer="check"])
+    [with_portmixer=$withval], [with_portmixer="check"])dnl
 
 # add projectM option
 AC_ARG_WITH([libprojectM], 
     [AS_HELP_STRING([--with-libprojectM],
       [enable projectM visualization support @<:@default=no@:>@])],
-    [with_libprojectM=$withval], [with_libprojectM="no"])
+    [with_libprojectM=$withval], [with_libprojectM="no"])dnl
 
 # print misc options header
 AC_ARG_WITH([cfg-dummy2], [
-Development options:])
+Development options:])dnl
 
 # add DEPRECATED global and local options
-AC_ARG_ENABLE([global], [AS_HELP_STRING([--enable-global], [(DEPRECATED, DO NOT USE]))])
-AC_ARG_ENABLE([local], [AS_HELP_STRING([--enable-local], [(DEPRECATED, DO NOT USE]))])
+AC_ARG_ENABLE([global],
+              [AS_HELP_STRING([--enable-global],[(DEPRECATED, DO NOT USE]))])
+AC_ARG_ENABLE([local],
+              [AS_HELP_STRING([--enable-local],[(DEPRECATED, DO NOT USE]))])
 
 if [[ x$enable_global != x -o x$enable_local != x ]]; then
    AC_MSG_NOTICE([
@@ -133,7 +135,7 @@ AC_ARG_ENABLE([debug],
   [AS_HELP_STRING([--enable-debug],
     [Enable debug build @<:@default=no@:>@])],
   [test $enableval = "yes" && ENABLE_DEBUG="yes"], [])
-AC_SUBST([ENABLE_DEBUG])
+AC_SUBST([ENABLE_DEBUG])dnl
 
 # -----------------------------------------
 # check for compilers
@@ -143,15 +145,15 @@ AC_SUBST([ENABLE_DEBUG])
 
 # find and test the freepascal compiler
 # sets PFLAGS, FPC_VERSION, FPC_DEBUG, etc.
-AC_PROG_FPC
+AC_PROG_FPC dnl# (eat newline)
 
 # find and test the C compiler (for C-libs and wrappers)
-AC_LANG([C])
-AC_PROG_CC
+AC_LANG([C])dnl
+AC_PROG_CC dnl# (eat newline)
 
 # find and test the C++ compiler (for C-libs and wrappers)
-AC_LANG([C++])
-AC_PROG_CXX
+AC_LANG([C++])dnl
+AC_PROG_CXX dnl# (eat newline)
 
 AC_PROG_RANLIB
 
@@ -196,13 +198,13 @@ else
 fi
 
 # find sdl
-PKG_HAVE([sdl], [sdl], [yes])
+PKG_HAVE([sdl],[sdl],[yes])dnl
 
 # find freetype
-PKG_HAVE([freetype], [freetype2], [yes])
+PKG_HAVE([freetype],[freetype2],[yes])dnl
 
 # find sqlite3
-PKG_HAVE([sqlite3], [sqlite3], [yes])
+PKG_HAVE([sqlite3],[sqlite3],[yes])dnl
 
 # find lua 5.1
 # (K)Ubuntu uses lua5.1.pc, Mac OS X and other 
@@ -213,7 +215,7 @@ if [[ x$lua_HAVE = xno ]]; then
     PKG_HAVE([lua], [lua >= 5.1], [yes])
     lua_LIB_NAME="lua"
 fi
-AC_SUBST([lua_LIB_NAME])
+AC_SUBST([lua_LIB_NAME])dnl
 
 # find FFMpeg
 # Note: do not use the min/max version parameters with ffmpeg
@@ -237,12 +239,12 @@ if [[ x$libavcodec_HAVE = xyes -a x$libavformat_HAVE = xyes -a x$libavutil_HAVE 
 else
     ffmpeg_HAVE=no
 fi
-AC_SUBST_DEFINE([HAVE_FFMPEG], [$ffmpeg_HAVE])
+AC_SUBST_DEFINE([HAVE_FFMPEG],[$ffmpeg_HAVE])dnl
 
 # find FFMpeg's swscale lib (just if FFMpeg is compiled in GPL mode)
 PKG_HAVE([libswscale], [libswscale], [no])
 PKG_VERSION([libswscale], [libswscale])
-AC_SUBST_DEFINE([HAVE_SWSCALE], [$libswscale_HAVE])
+AC_SUBST_DEFINE([HAVE_SWSCALE],[$libswscale_HAVE])dnl
 
 
 # find projectM version
@@ -262,35 +264,35 @@ if [[ "$libprojectM_VERSION_MAJOR" -ge 1 ]]; then
 else
     libprojectM_USE_CWRAPPER=no
 fi
-AC_SUBST([USE_PROJECTM_CWRAPPER], [$libprojectM_USE_CWRAPPER])
+AC_SUBST([USE_PROJECTM_CWRAPPER],[$libprojectM_USE_CWRAPPER])dnl
 
 # find portaudio
-PKG_HAVE([portaudio], [portaudio-2.0], [yes])
-PKG_VERSION([portaudio], [portaudio-2.0])
-AC_SUBST_DEFINE([HAVE_PORTAUDIO], [$portaudio_HAVE])
+PKG_HAVE([portaudio],[portaudio-2.0], [yes])
+PKG_VERSION([portaudio],[portaudio-2.0])
+AC_SUBST_DEFINE([HAVE_PORTAUDIO],[$portaudio_HAVE])dnl
 
 
 # find pcre
 libpcre_PKG="libpcre"
-PKG_HAVE([libpcre], [$libpcre_PKG], [no])
-PKG_VERSION([libpcre], [$libpcre_PKG])
-AC_SUBST_DEFINE([HAVE_LIBPCRE], [$libpcre_HAVE])
+PKG_HAVE([libpcre],[$libpcre_PKG],[no])
+PKG_VERSION([libpcre],[$libpcre_PKG])
+AC_SUBST_DEFINE([HAVE_LIBPCRE],[$libpcre_HAVE])
 # get libpcre library dir
-PKG_VALUE([libpcre], [LIBDIR], [variable=libdir], [$libpcre_PKG], 
-          [library dir (e.g. /usr/lib, /sw/lib, ...)])
+PKG_VALUE([libpcre],[LIBDIR],[variable=libdir],[$libpcre_PKG], 
+          [library dir (e.g. /usr/lib, /sw/lib, ...)])dnl
 
 # find portmixer
-PKG_HAVE([portmixer], [portmixer], [no])
-AC_SUBST_DEFINE([HAVE_PORTMIXER], [$portmixer_HAVE])
+PKG_HAVE([portmixer],[portmixer],[no])
+AC_SUBST_DEFINE([HAVE_PORTMIXER],[$portmixer_HAVE])dnl
 
 # determine linker-flags
 if test x$FPC_PLATFORM = xdarwin; then
   LDFLAGS="-macosx_version_min 10.4 -undefined dynamic_lookup -headerpad_max_install_names"
 fi
 
-#LIBS=
-AC_SUBST([LDFLAGS])
-AC_SUBST([LIBS])
+# ...possibly set LIBS manually here?
+AC_SUBST([LDFLAGS])dnl
+AC_SUBST([LIBS])dnl
 
 # -----------------------------------------
 # create output files
@@ -325,7 +327,4 @@ AC_MSG_NOTICE([
 !!! You might as well ask for help at the IRC-Channel
 !!!   $PACKAGE_IRC
 !!!
-])
-
-
-
+])dnl

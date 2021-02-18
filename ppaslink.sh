@@ -6,6 +6,6 @@ DoExitLink ()
 OFS=$IFS
 IFS="
 "
-/usr/bin/ld /usr/lib/crt1.o  -z noexecstack     -multiply_defined suppress -L. -o conftest `cat link.res` -pagezero_size 0x10000
+/usr/bin/ld         -multiply_defined suppress -L. -o conftest `cat link.res`
 if [ $? != 0 ]; then DoExitLink ; fi
 IFS=$OFS
