@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -137,7 +137,7 @@
 		2CAC2BE70D3809F500CA518A /* UAudioInput_Bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BDD0D3809F500CA518A /* UAudioInput_Bass.pas */; };
 		2CAC2BE90D3809F500CA518A /* UAudioPlayback_Bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BDF0D3809F500CA518A /* UAudioPlayback_Bass.pas */; };
 		2CAC2BF10D380AC200CA518A /* libbass.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAC2BF00D380AC200CA518A /* libbass.dylib */; };
-		2CAC2BF40D380AE800CA518A /* libbass.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CAC2BF00D380AC200CA518A /* libbass.dylib */; };
+		2CAC2BF40D380AE800CA518A /* libbass.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CAC2BF00D380AC200CA518A /* libbass.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2CAC2BF80D380B1B00CA518A /* bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BF70D380B1B00CA518A /* bass.pas */; };
 		2CAC2BF90D380B1B00CA518A /* bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC2BF70D380B1B00CA518A /* bass.pas */; };
 		2CB9E87E0D43B78400214DFA /* USong.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E87D0D43B78400214DFA /* USong.pas */; };
@@ -148,7 +148,7 @@
 		2CDD4BE00CB947B100549FAC /* sdl.pas in Sources */ = {isa = PBXBuildFile; fileRef = 98B8BE5C0B1F974F00162019 /* sdl.pas */; };
 		2CDD4BE20CB947BE00549FAC /* UltraStarDX.pas in Sources */ = {isa = PBXBuildFile; fileRef = DDC6851B09F57195004E4BFF /* UltraStarDX.pas */; };
 		2CDEA4F70CBD725B0096994C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDEA4F60CBD725B0096994C /* OpenGL.framework */; };
-		2CDEC4960CC5264600FFA244 /* SDL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98B8BE570B1F972400162019 /* SDL.framework */; };
+		2CDEC4960CC5264600FFA244 /* SDL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98B8BE570B1F972400162019 /* SDL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2CE603DA0D715F2100DB0D88 /* mathematics.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CE603D90D715F2100DB0D88 /* mathematics.pas */; };
 		2CE603DB0D715F2100DB0D88 /* mathematics.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CE603D90D715F2100DB0D88 /* mathematics.pas */; };
 		2CE603DE0D715F6700DB0D88 /* UAudioCore_Bass.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CE603DD0D715F6700DB0D88 /* UAudioCore_Bass.pas */; };
@@ -158,9 +158,9 @@
 		2CE907930D1BC8A800A1FDFF /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE907900D1BC8A800A1FDFF /* libavcodec.dylib */; };
 		2CE907940D1BC8A800A1FDFF /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE907910D1BC8A800A1FDFF /* libavformat.dylib */; };
 		2CE907950D1BC8A800A1FDFF /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE907920D1BC8A800A1FDFF /* libavutil.dylib */; };
-		2CE907980D1BC90A00A1FDFF /* libavcodec.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CE907900D1BC8A800A1FDFF /* libavcodec.dylib */; };
-		2CE907990D1BC91D00A1FDFF /* libavformat.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CE907910D1BC8A800A1FDFF /* libavformat.dylib */; };
-		2CE9079A0D1BC91D00A1FDFF /* libavutil.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CE907920D1BC8A800A1FDFF /* libavutil.dylib */; };
+		2CE907980D1BC90A00A1FDFF /* libavcodec.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CE907900D1BC8A800A1FDFF /* libavcodec.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CE907990D1BC91D00A1FDFF /* libavformat.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CE907910D1BC8A800A1FDFF /* libavformat.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CE9079A0D1BC91D00A1FDFF /* libavutil.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CE907920D1BC8A800A1FDFF /* libavutil.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2CEA2AE00CE385190097A5FF /* Graphics.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CEA2ADE0CE385190097A5FF /* Graphics.pas */; };
 		2CEA2AE10CE385190097A5FF /* JPEG.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CEA2ADF0CE385190097A5FF /* JPEG.pas */; };
 		2CEA2AE20CE385190097A5FF /* Graphics.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CEA2ADE0CE385190097A5FF /* Graphics.pas */; };
@@ -258,10 +258,10 @@
 		2CF552B70CDA42C900627463 /* rational.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF552A50CDA42C900627463 /* rational.pas */; };
 		2CF553080CDA51B500627463 /* sdlutils.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF553070CDA51B500627463 /* sdlutils.pas */; };
 		2CF553090CDA51B500627463 /* sdlutils.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF553070CDA51B500627463 /* sdlutils.pas */; };
-		2CF553100CDA52D100627463 /* SDL_image.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C4D9D980CC9EE0B0031092D /* SDL_image.framework */; };
-		2CF5533B0CDA52E200627463 /* SDL_ttf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C4D9D990CC9EE0B0031092D /* SDL_ttf.framework */; };
-		2CF5533F0CDA531100627463 /* libfreeimage.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C4D9D960CC9EDEB0031092D /* libfreeimage.dylib */; };
-		2CF553400CDA531100627463 /* libsqlite3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF5512C0CDA29C600627463 /* libsqlite3.dylib */; };
+		2CF553100CDA52D100627463 /* SDL_image.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C4D9D980CC9EE0B0031092D /* SDL_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CF5533B0CDA52E200627463 /* SDL_ttf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C4D9D990CC9EE0B0031092D /* SDL_ttf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CF5533F0CDA531100627463 /* libfreeimage.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C4D9D960CC9EDEB0031092D /* libfreeimage.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CF553400CDA531100627463 /* libsqlite3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF5512C0CDA29C600627463 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2CF8E6BE0CDFA8E80053A996 /* UPartyDefs.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8E6BD0CDFA8E80053A996 /* UPartyDefs.pas */; };
 		2CF8E6BF0CDFA8E80053A996 /* UPartyDefs.pas in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8E6BD0CDFA8E80053A996 /* UPartyDefs.pas */; };
 		98B8BE340B1F947800162019 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B8BE330B1F947800162019 /* AppKit.framework */; };
@@ -926,15 +926,19 @@
 /* Begin PBXProject section */
 		DDC6850F09F5717A004E4BFF /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1320;
+			};
 			buildConfigurationList = DDC6851009F5717A004E4BFF /* Build configuration list for PBXProject "UltraStarDX" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				ja,
+				Base,
+				fr,
+				de,
+				en,
 			);
 			mainGroup = DDC6850D09F5717A004E4BFF;
 			productRefGroup = DDC6888C09F57243004E4BFF /* Products */;
@@ -1311,15 +1315,15 @@
 		2CF77DB70CF7556D00F3B101 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				LD_DYLIB_INSTALL_NAME = "@executable_path/libUntil5000.dylib";
-				PREBINDING = NO;
 				PRODUCT_NAME = Until5000;
 				ZERO_LINK = YES;
 			};
@@ -1328,13 +1332,13 @@
 		2CF77DB80CF7556D00F3B101 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = lib;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
-				PREBINDING = NO;
 				PRODUCT_NAME = Lib_UltraPong;
 				ZERO_LINK = NO;
 			};
@@ -1343,14 +1347,14 @@
 		DD37F2570A60258300975B2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
-				PREBINDING = NO;
 				PRODUCT_NAME = fpcrtl;
 				ZERO_LINK = YES;
 			};
@@ -1359,12 +1363,12 @@
 		DD37F2580A60258300975B2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
-				PREBINDING = NO;
 				PRODUCT_NAME = fpcrtl;
 				ZERO_LINK = NO;
 			};
@@ -1373,8 +1377,10 @@
 		DDC6851109F5717A004E4BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = YES;
 				FPC_COMMON_OPTIONS = "-Sd -XMSDL_main";
 				FPC_MAIN_FILE = "";
 				FPC_OVERRIDE_OPTIONS = "";
@@ -1382,7 +1388,6 @@
 				FPC_SPECIFIC_OPTIONS = "-Ci -Cr -Co -gl -O-";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_EXCEPTIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_VERSION = 4.0;
@@ -1416,10 +1421,11 @@
 				HEADER_SEARCH_PATHS = "";
 				LD_GENERATE_MAP_FILE = YES;
 				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
 				REZ_SEARCH_PATHS = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1428,19 +1434,22 @@
 		DDC6851209F5717A004E4BFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				COPY_PHASE_STRIP = YES;
 				FPC_COMMON_OPTIONS = "-Sd -XMSDL_main";
 				FPC_MAIN_FILE = "";
 				FPC_OVERRIDE_OPTIONS = "";
 				FPC_RTL_UNITS_BASE = /usr/local/lib/fpc/;
 				FPC_SPECIFIC_OPTIONS = "-Ci- -Cr- -Co- -O3 -Xs ";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Release;
 		};
 		DDC688CC09F574E9004E4BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1448,12 +1457,12 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -1481,7 +1490,7 @@
 					"-framework",
 					Carbon,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ultrastardx;
 				PRODUCT_NAME = "UltraStar Deluxe";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -1491,17 +1500,19 @@
 		DDC688CD09F574E9004E4BFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -1532,7 +1543,7 @@
 					"-framework",
 					Carbon,
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ultrastardx;
 				PRODUCT_NAME = "UltraStar Deluxe";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -1542,6 +1553,7 @@
 		DDC688DD09F57542004E4BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1549,12 +1561,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Carbon,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = "Put unit sources in the 'Compile Sources' phase of this target";
 			};
 			name = Debug;
@@ -1562,18 +1574,18 @@
 		DDC688DE09F57542004E4BFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Carbon,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = "Put unit sources in the 'Compile Sources' phase of this target";
 				ZERO_LINK = NO;
 			};
