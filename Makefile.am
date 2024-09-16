@@ -1,4 +1,5 @@
 ACLOCAL_AMFLAGS = -I dists/autogen/m4
+DISTCLEANFLAGS = *~ autoscan.log dists/autogen/*~
 
 #################################################
 # @PACKAGE_STRING@
@@ -83,9 +84,9 @@ USE_PROJECTM_CWRAPPER = @USE_PROJECTM_CWRAPPER@
 #################################################
 
 DEPS :=
-ifeq ($(USE_PROJECTM_CWRAPPER), yes)
-  DEPS += $(PROJECTM_CWRAPPER_DIR)
-# There used to be an "endif" here but automake complained about it
+@ifGNUmake@ifeq ($(USE_PROJECTM_CWRAPPER), yes)
+@ifGNUmake@  DEPS += $(PROJECTM_CWRAPPER_DIR)
+@ifGNUmake@endif
 
 #################################################
 # general targets
@@ -119,7 +120,7 @@ $(BUILD_TARGETS): all-deps
 .PHONY: all-deps
 all-deps:
 	@for dir in $(DEPS); do \
-	  $(MAKE) -C "$$dir" all; \
+	  $(MAKE) -C "$${dir}" all; \
 	done
 
 .PHONY: clean-local
@@ -132,7 +133,7 @@ clean-src:
 .PHONY: clean-deps
 clean-deps:
 	@for dir in $(DEPS); do \
-	  $(MAKE) -C "$$dir" clean; \
+	  $(MAKE) -C "$${dir}" clean; \
 	done
 
 .PHONY: clean-game
@@ -140,19 +141,19 @@ clean-game:
 	$(RM) $(USDX_GAME_DIR)/*.log
 	$(RM) $(USDX_GAME_DIR)/*.db
 	$(RM) $(USDX_GAME_DIR)/*.ini
-	-rmdir $(USDX_GAME_DIR)/screenshots
-	-rmdir $(USDX_GAME_DIR)/playlists
-	-rmdir $(USDX_GAME_DIR)/songs
+	-rmdir $(USDX_GAME_DIR)/screenshots || echo "skipping $(USDX_GAME_DIR)/screenshots"
+	-rmdir $(USDX_GAME_DIR)/playlists || echo "skipping $(USDX_GAME_DIR)/playlists"
+	-rmdir $(USDX_GAME_DIR)/songs || echo "skipping $(USDX_GAME_DIR)/songs"
 
 # just clean the game build data but no dependencies (libs, tools, ...)
 .PHONY: mostlyclean-local
 mostlyclean-local: clean-src
 
 .PHONY: distclean-local
-distclean-local: clean clean-game
+distclean-local: clean clean-game tidy
 	$(RM) config.log config.status aclocal.m4 
-	$(RM_REC) autom4te.cache
-	$(RM) $(USDX_SRC_DIR)/config.inc 
+	$(RM_REC) autom4te.cache || rmdir autom4te.cache
+	$(RM) $(USDX_SRC_DIR)/config.inc link*.res
 	$(RM) $(srcdir)/Makefile $(USDX_SRC_DIR)/Makefile $(PROJECTM_CWRAPPER_DIR)/Makefile
 
 .PHONY: maintainer-clean-local
@@ -181,7 +182,8 @@ Makefile-reconf: $(srcdir)/Makefile.in $(USDX_SRC_DIR)/Makefile.in $(USDX_SRC_DI
 	./config.status
 	@echo "-----------------------------------"
 
-config.status: configure
+.PHONY: rerun_config_dot_status
+rerun_config_dot_status: configure
 	./config.status --recheck
 
 .PHONY: reconf
@@ -256,16 +258,16 @@ install-data-recursive:
 # Note: the project contains filesnames with whitespace 
 	$(MKDIR) "$(RECURSIVE_DST_DIR)"
 	@for file in "$(RECURSIVE_SRC_DIR)"/*; do \
-	  if test -f "$$file"; then \
-	    filename=`basename "$$file"`; \
-	    echo "$(INSTALL_DATA) \"$$file\" \"$(RECURSIVE_DST_DIR)/$$filename\""; \
-	    $(INSTALL_DATA) "$$file" "$(RECURSIVE_DST_DIR)/$$filename" || exit 1; \
+	  if test -f "$${file}"; then \
+	    filename=`basename "$${file}"`; \
+	    echo "$(INSTALL_DATA) \"$${file}\" \"$(RECURSIVE_DST_DIR)/$${filename}\""; \
+	    $(INSTALL_DATA) "$${file}" "$(RECURSIVE_DST_DIR)/$${filename}" || exit 1; \
 	  fi; \
-	  if test -d "$$file"; then \
-	    subdir="$$file"; \
-	    subdirname=`basename "$$subdir"`; \
-	    $(MAKE) RECURSIVE_SRC_DIR="$$subdir" \
-	            RECURSIVE_DST_DIR="$(RECURSIVE_DST_DIR)/$$subdirname" \
+	  if test -d "$${file}"; then \
+	    subdir="$${file}"; \
+	    subdirname=`basename "$${subdir}"`; \
+	    $(MAKE) RECURSIVE_SRC_DIR="$${subdir}" \
+	            RECURSIVE_DST_DIR="$(RECURSIVE_DST_DIR)/$${subdirname}" \
 	            install-data-recursive || exit 1; \
 	  fi; \
 	done
@@ -300,20 +302,20 @@ uninstall-plugins:
 
 disttmpdir := $(USDX_PACKAGE_NAME)-1.1_alpha-src
 
-.PHONY: dist
-dist:
+.PHONY: dist-local
+dist-local:
 	@$(svn-files) | while read FILE; do \
-	  if test -d "$$FILE"; then \
-	    echo "MKDIR: $(disttmpdir)/$$FILE"; \
-	    $(MKDIR) "$(disttmpdir)/$$FILE" || exit 1; \
+	  if test -d "$${FILE}"; then \
+	    echo "MKDIR: $(disttmpdir)/$${FILE}"; \
+	    $(MKDIR) "$(disttmpdir)/$${FILE}" || exit 1; \
 	  else \
-	    echo "COPY:  $$FILE"; \
-	    cp "$$FILE" "$(disttmpdir)/$$FILE" || exit 1; \
+	    echo "COPY:  $${FILE}"; \
+	    cp "$${FILE}" "$(disttmpdir)/$${FILE}" || exit 1; \
 	  fi; \
 	done
 	tar cvf $(disttmpdir).tar $(disttmpdir)
 	gzip $(disttmpdir).tar
-	$(RM_REC) $(disttmpdir)
+	$(RM_REC) $(disttmpdir) || rmdir $(disttmpdir)
 
 #################################################
 # Debian package
@@ -326,19 +328,14 @@ debpkgname   := $(debpkgprefix)_$(USDX_VERSION)_$(PPROCESSOR).deb
 
 .PHONY: deb
 deb: all
-	$(RM_REC) $(debpkgtmpdir)
-
+	$(RM_REC) $(debpkgtmpdir) || rmdir $(debpkgtmpdir)
 	$(MKDIR) $(debpkgdir)
 	$(MKDIR) $(debpkgtmpdir)/DEBIAN
-
 	$(MAKE) DESTDIR=$(debpkgtmpdir)/ install-all
-
 	$(INSTALL_DATA) $(debpkgdir)/$(debpkgprefix).control $(debpkgtmpdir)/DEBIAN/control
-
 	dpkg-deb --build $(debpkgtmpdir)
 	mv $(debpkgtmpdir)/../deb-package.deb $(debpkgdir)/$(debpkgname)
-
-	$(RM_REC) $(debpkgtmpdir)
+	$(RM_REC) $(debpkgtmpdir) || rmdir $(debpkgtmpdir)
 
 #################################################
 # RPM (TODO)
@@ -346,7 +343,7 @@ deb: all
 
 .PHONY: rpm
 rpm: all
-	@echo "Coming soon"
+	@echo "$@: Coming soon"
 
 
 #################################################
@@ -368,30 +365,22 @@ macosx_bundle_path := UltraStarDeluxe.app/Contents
 .PHONY: macosx-app
 macosx-app: all 
 # Create double clickable Mac OS X application.
-
 	@echo ""
 	@echo "Creating the Mac OS X application"
 	@echo ""
-
 	$(MKDIR) $(macosx_bundle_path)
-
 # Put the icon file into its particular place. 
 # Must be done BEFORE info.plist is created.
 	$(MKDIR) $(macosx_bundle_path)/resources
 	$(INSTALL_DATA) icons/ultrastardx.icns $(macosx_bundle_path)/resources/
-
-# the info.plist file
+# the info.plist file:
 	$(INSTALL_DATA) $(USDX_SRC_DIR)/macosx/Info.plist $(macosx_bundle_path)/
-
 # Copy the resources. 
 	$(MAKE) install-all INSTALL_DATADIR=$(macosx_bundle_path) bindir=$(macosx_bundle_path)/MacOS
-
 # Copy the lua plugins. 
 	$(MAKE) install-plugins INSTALL_DATADIR=$(macosx_bundle_path) bindir=$(macosx_bundle_path)/MacOS
-
 # Create the song directory. 
 	$(MKDIR) $(macosx_bundle_path)/songs
-
 # final messages
 	@echo ""
 	@echo "Mac OS X application created."
@@ -403,12 +392,10 @@ macosx-app: all
 macosx-standalone-app: macosx-app 
 # Create double clickable standalone (does not need fink) Mac OS X 
 # application. Not fully test, but should work on 10.5.
-
 	@echo ""
 	@echo "Creating the standalone Mac OS X application"
 	@echo ""
-
-# copy the dylib and change its install names
+# copy the dylib and change its install names:
 
 define install_osx_libraries
     $(shell $(INSTALL) -m 755 $(dylib) $(macosx_bundle_path)/MacOS)
@@ -457,7 +444,7 @@ clean-macosx: clean-macosx-app clean-macosx-dmg
 
 .PHONY: clean-macosx-app
 clean-macosx-app:
-	$(RM_REC) UltraStarDeluxe.app 
+	$(RM_REC) UltraStarDeluxe.app || rmdir UltraStarDeluxe.app
 
 .PHONY: clean-macosx-dmg
 clean-macosx-dmg:

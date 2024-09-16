@@ -6,6 +6,6 @@ DoExitLink ()
 OFS=$IFS
 IFS="
 "
-/usr/bin/ld         -multiply_defined suppress -L. -o conftest `cat link.res`
+/Library/Developer/CommandLineTools/usr/bin/ld     -z noexecstack    -x   -multiply_defined suppress -L. -o conftest `cat link11700.res` -filelist linkfiles11700.res
 if [ $? != 0 ]; then DoExitLink ; fi
 IFS=$OFS

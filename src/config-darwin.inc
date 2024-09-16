@@ -6,32 +6,32 @@
 {* Libraries *}
 
 {$IF Defined(IncludeConstants)}
-  lua_lib_name = 'lua';
+  lua_lib_name = 'lua5.1';
 {$IFEND}
 
 {$DEFINE HaveFFmpeg}
 {$IF Defined(HaveFFmpeg) and Defined(IncludeConstants)}
   av__codec = 'libavcodec';
-  LIBAVCODEC_VERSION_MAJOR   = 54;
-  LIBAVCODEC_VERSION_MINOR   = 92;
+  LIBAVCODEC_VERSION_MAJOR   = 58;
+  LIBAVCODEC_VERSION_MINOR   = 134;
   LIBAVCODEC_VERSION_RELEASE = 100;
 
   av__format = 'libavformat';
-  LIBAVFORMAT_VERSION_MAJOR   = 54;
-  LIBAVFORMAT_VERSION_MINOR   = 63;
-  LIBAVFORMAT_VERSION_RELEASE = 104;
+  LIBAVFORMAT_VERSION_MAJOR   = 58;
+  LIBAVFORMAT_VERSION_MINOR   = 76;
+  LIBAVFORMAT_VERSION_RELEASE = 100;
 
   av__util = 'libavutil';
-  LIBAVUTIL_VERSION_MAJOR   = 52;
-  LIBAVUTIL_VERSION_MINOR   = 18;
+  LIBAVUTIL_VERSION_MAJOR   = 56;
+  LIBAVUTIL_VERSION_MINOR   = 70;
   LIBAVUTIL_VERSION_RELEASE = 100;
 {$IFEND}
 
 {$DEFINE HaveSWScale}
 {$IF Defined(HaveSWScale) and Defined(IncludeConstants)}
   sw__scale = 'libswscale';
-  LIBSWSCALE_VERSION_MAJOR   = 2;
-  LIBSWSCALE_VERSION_MINOR   = 2;
+  LIBSWSCALE_VERSION_MAJOR   = 5;
+  LIBSWSCALE_VERSION_MINOR   = 9;
   LIBSWSCALE_VERSION_RELEASE = 100;
 {$IFEND}
 

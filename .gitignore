@@ -15,6 +15,7 @@ Thumbs.db
 *.bak
 *~
 Makefile
+Makefile-non-automake
 *.log
 *.status
 __history
@@ -29,3 +30,5 @@ stamp-h*
 *(Autosaved)*
 confdefs*
 conftest*
+conf*/*.awk
+link*.res

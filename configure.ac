@@ -1,4 +1,4 @@
-dnl#
+dnl#                                               -*- Autoconf -*-
 dnl# ultrastardx configure.ac script
 dnl#
 dnl# by UltraStar Deluxe Team
@@ -70,6 +70,21 @@ AC_PROG_AWK
 AC_PROG_SED
 AC_PROG_GREP
 AC_PROG_EGREP
+if test "x${AR}" = "x"; then
+  test -z "${AR}" || unset AR
+  AC_CHECK_TOOLS([AR],[ar gar])dnl
+  ## might want to switch around these checks:
+  if test "x${ac_cv_prog_AR}" = "x"; then
+    test -z "${ac_cv_prog_AR}" || unset ac_cv_prog_AR
+    m4_ifdef([AC_PROG_AR],[
+      AC_PROG_AR
+    ],[
+      test -x "`which ar`" && echo "first ar in path is `which ar`"
+    ])
+  fi
+else
+  test -n "${AR}" && export AR
+fi
 
 # Other things to check
 AC_OBJEXT
